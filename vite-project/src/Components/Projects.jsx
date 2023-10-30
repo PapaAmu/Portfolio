@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <div>
             <Card>
-                <Card.Img variant="top" src="public/images/Bellabheka websiete.png" />
+                <Card.Img variant="top" src="images/Bellabheka websiete.png" />
                 <Card.Body>
                     <Card.Title>Bellabheka Website</Card.Title>
                     <Card.Text>
@@ -16,7 +16,7 @@ const Projects = () => {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="public/images/Weather App.jpeg" />
+                <Card.Img variant="top" src="images/Weather App.jpeg" />
                 <Card.Body>
                     <Card.Title>React Weather Application</Card.Title>
                     <Card.Text>
@@ -27,7 +27,7 @@ const Projects = () => {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="public/images/Portfolio Website" />
+                <Card.Img variant="top" src="images/Portfolio Website" />
                 <Card.Body>
                     <Card.Title>Portfolio Website</Card.Title>
                     <Card.Text>
