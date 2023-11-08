@@ -2,17 +2,18 @@ import React from 'react';
 import './App.css'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import Navbar from './Components/Nav'
+import Nav from './Components/Nav'
 import Home from './Components/Home';
 import About from './Components/About';
 import TechnicalSkills from './Components/TechnicalSkills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import ContactForm from './Components/ContactForm';
+import Footer from './Components/Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Navbar />}>
+    <Route path="/" element={<Nav />}>
       <Route path="/Home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/technicalskills" element={<TechnicalSkills />} />
@@ -26,12 +27,13 @@ const router = createBrowserRouter(
 function App({routes}) {
   return (
     <>
-      <RouterProvider router={router}/>
+      <Nav />
       <Home />
       <About />
       <TechnicalSkills />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }
