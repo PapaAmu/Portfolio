@@ -1,44 +1,79 @@
-import React from 'react';
-import { Card, Button } from 'react-bootstrap';
-
-const Projects = () => {
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Typography,
+    Button,
+  } from "@material-tailwind/react";
+   
+  export default function Projects() {
     return (
-        <div>
-            <Card>
-                <Card.Img variant="top" src="images/Bellabheka websiete.png" />
-                <Card.Body>
-                    <Card.Title>Bellabheka Website</Card.Title>
-                    <Card.Text>
-                    A website for a decor and catering business based in durban that caters for weddings, birthdays and all kinds of events.
-                    </Card.Text>
-                    <Button variant="primary" href="https://bellabheksa-website.netlify.app/">Website</Button>{' '}
-                    <Button variant="secondary" href="https://github.com/HlobisileLukhele/BellaBheka-Website-">GitHub</Button>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="images/Weather App.jpeg" />
-                <Card.Body>
-                    <Card.Title>React Weather Application</Card.Title>
-                    <Card.Text>
-                    React weather app that shows live forecast data
-                    </Card.Text>
-                    <Button variant="primary" href="https://jenise-react-weather-app.netlify.app/">Website</Button>{' '}
-                    <Button variant="secondary" href="https://github.com/HlobisileLukhele/React-Weather-App">GitHub</Button>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Img variant="top" src="images/Portfolio Website" />
-                <Card.Body>
-                    <Card.Title>Portfolio Website</Card.Title>
-                    <Card.Text>
-                        Personal portfolio made withreactjs to showcase projects built and skills acquired.
-                    </Card.Text>
-                    <Button variant="primary" href="https://hlobisile-lukhele-portfolio.netlify.app/">Website</Button>{' '}
-                    <Button variant="secondary" href="https://github.com/HlobisileLukhele/Personal-Portfolio">GitHub</Button>
-                </Card.Body>
-            </Card>
+      <div className="md:container md:mx-auto my-6 mb-10 gap-2 space-x-4">
+      <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
+        Projects
+      </Typography>
+      <div className="lg: grid grid-cols-1 md:grid-cols-3 gap-14 ">
+        <div className="md:w-96 border-black">
+          <Card className="mt-6">
+            <CardHeader color="blue-gray" className="relative h-46">
+              <img src="public/images/Bellabheka website.png" alt="card-image" />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                Bellabheka Website
+              </Typography>
+              <Typography color="blue-gray">
+                Bellabheka is a catering and decor company that provides services to all kinds of events around Durban.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button>Read More</Button>
+            </CardFooter>
+          </Card>
         </div>
-    );
-};
+    
+        <div className=" md:w-96 border-black">
+          <Card className="mt-6 space-x-4">
+            <CardHeader color="blue-gray" className="relative h-46">
+              <img src="public/images/Portfolio Website.jpeg" alt="card-image" />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                Personal Portfolio
+              </Typography>
+              <Typography color="blue-gray">
+                Personal portfolio website to showcase skills acquired and projects built along with the impacts it derives.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
 
-export default Projects;
+        <div className="w-full md:w-96 border-black">
+          <Card className="mt-6">
+            <CardHeader color="blue-gray" className="relative h-46">
+            <img src="public/images/Fruad Detector.jpeg" alt="card-image" />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                Fruad Detector
+              </Typography>
+              <Typography color="blue-gray">
+              A application that checks for fraudulent activities by analyzing card transactions.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button>Read More</Button>
+            </CardFooter>
+          </Card>
+        </div>
+    
+       
+      </div>
+    </div>
+    
+    );
+  }
