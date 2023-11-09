@@ -9,13 +9,33 @@
       display: none;
   }
 } 
+/* styling the technical skills page */
+.tech-skill{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center !important;
+  align-items: center;
 
-
-.line {
-  border-left: 2px solid blue; /* Adjust the line color and width as needed */
-  height: 50px; /* Adjust the line height as needed */
-  margin-left: 10px; /* Adjust the margin to position the line correctly */
 }
+/* For small screens, display columns as a single column */
+@media (max-width: 667px) {
+  .columns-2 {
+    grid-template-columns: 1fr;
+    line-height: normal;
+  }
+
+  .first-column {
+    order: 1; /* Display the first column first */
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  .second-column {
+    order: 2; /* Display the second column second */
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+}
+
 
 
 
