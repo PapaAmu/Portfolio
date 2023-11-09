@@ -11,6 +11,13 @@
 } 
 
 
+.line {
+  border-left: 2px solid blue; /* Adjust the line color and width as needed */
+  height: 50px; /* Adjust the line height as needed */
+  margin-left: 10px; /* Adjust the margin to position the line correctly */
+}
+
+
 
 
 
