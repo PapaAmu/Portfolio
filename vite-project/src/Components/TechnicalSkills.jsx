@@ -1,80 +1,151 @@
 import React from 'react';
+import {Typography} from "@material-tailwind/react";
 import { motion } from 'framer-motion';
 import { Card } from 'react-bootstrap';
 
 const TechnicalSkills = () => {
-    const skills = [
-        {
-            id: 1,
-            title: 'JavaScript',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 2,
-            title: 'React',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 3,
-            title: 'Bootstrap',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 4,
-            title: 'Framer Motion',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 5,
-            title: 'HTML',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 6,
-            title: 'CSS',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 7,
-            title: 'Node.js',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 8,
-            title: 'Express.js',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 9,
-            title: 'MongoDB',
-            image: 'https://via.placeholder.com/150',
-        },
-        {
-            id: 10,
-            title: 'Git',
-            image: 'https://via.placeholder.com/150',
-        },
-    ];
-
     return (
-        <div className="d-flex overflow-auto">
-            {skills.map((skill) => (
-                <motion.div
-                    key={skill.id}
-                    className="mx-2"
-                    initial={{ x: -100 }}
-                    animate={{ x: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={skill.image} />
-                        <Card.Body>
-                            <Card.Title>{skill.title}</Card.Title>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-            ))}
-        </div>
+        <>
+        <Typography variant="h4" color="blue-gray" className="text-center font-serif mb-4 mt-8">
+           Technical Skills
+          </Typography>
+          <div className="md:container md:mx-auto mt-4 mb-20 items-center">
+          <div className="columns-2 mt-4 gap-6">
+         
+          <div className="grid grid-rows-3 gap-2 ">
+          <h2 className="font-semibold font-sans mt-4 text-center">Languages</h2>
+          <div className="grid  grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/HTML5.png" className="h-5 w-6 inline-block"/>
+                <p className="inline-block"> HTML</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/CSS3.png" className="h-5 w-6 inline-block"/>
+                <p className="inline-block">CSS</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Javascript_logo.png" className="h-5 w-6 inline-block"/>
+                <p className="inline-block">JAVASCRIPT</p>
+                </div>
+          </div>
+          </div>
+          
+          <div className="grid grid-rows-3 gap-2 ">
+          <h2 className="font-semibold font-sans mt-2 text-center">Libraries</h2>
+          <div className="grid  grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500  rounded-md">
+                <img src="public/svg/Jquery.png" className="h-6 w-6 inline-block" />
+                <p className="inline-block">JQUERY</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/axios.png" className="h-7 w-150 inline-block" />
+                </div>
+
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Redux.png" className="h-6 w-6 inline-block" />
+                <p className="inline-block">REDUX</p>
+                </div>
+          </div>
+          </div>
+          </div>
+
+
+          <div className="columns-2 gap-8">
+
+          <div className="grid grid-rows-1 gap-4 ">
+          <h2 className="font-semibold font-sans float-left mt-6 text-center">Version control systems</h2>
+          <div className="grid  gap-4 grid-cols-3 text-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Git.png" className="h-7 w-7 inline-block" />
+                <p className=" inline-block">GIT</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Github.png" className="h-7 w-7 inline-block" />
+                <p className="inline-block">GITHUB</p>
+                </div>
+          </div>
+          </div>
+
+          <div className="grid grid-rows-2 gap-4">
+          <h2 className="font-semibold font-sans mt-6 text-center">CSS Frameworks</h2>
+          <div className="grid  grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Boostrap.png" className="h-5 w-5 inline-block"/>
+                <p className="inline-block">BOOSTRAP</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Tailwind.png"className="h-6 w-6 inline-block"/>
+                <p className="inline-block">TAILWIND</p>
+                </div>
+                
+          </div>
+          </div>
+
+          <div className="grid grid-rows-1 gap-4">
+          <h2 className="font-semibold font-sans mt-6 text-center">Frameworks</h2>
+          <div className="grid gap-2 grid-cols-3">
+                <div className="outline outline-blue-500  inline-block rounded-md text-center items-center">
+                <img src="public/svg/React.png" className="h-6 w-6 inline-block"/>
+                <p className="inline-block text-center">REACT</p>
+                </div>
+          </div>
+          </div>
+         
+          <div className="grid grid-rows-2 gap-2">
+          <h2 className="font-semibold font-sans mt-6 text-center">API's</h2>
+          <div className="grid grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Rest API.png" className="h-6 w-6 inline-block" />
+                <p className="inline-block">RESTFUL API</p>
+                </div>
+                
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Graphql.png" className="h-6 w-6 inline-block" />
+                <p className="inline-block">GRAPHQL</p>
+                </div>
+          </div>
+          </div>
+        
+          <div className="grid grid-rows-2  gap-4 ">
+          <h2 className="font-semibold font-sans mt-6 text-center">Database</h2>
+          <div className="grid  grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Mysql.png" className="h-7 w-7 inline-block"/>
+                <p className="inline-block">MYSQL</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/MongoDB.png"className="h-7 w-7 inline-block"/>
+                <p className="inline-block">MONGODB</p>
+                </div>
+          </div>
+          </div>
+
+          <div className="grid grid-rows-1 gap-4 ">
+          <h2 className="font-semibold font-sans mt-6 text-center">Design</h2>
+          <div className="grid  grid-cols-3 gap-4 text-center items-center">
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Figma.png" className="h-7 w-7 inline-block"/>
+                <p className="inline-block">FIGMA</p>
+                </div>
+
+                <div className="inline-block outline outline-blue-500 rounded-md">
+                <img src="public/svg/Invision.png" className="h-5 w-5 inline-block rounded-md"/>
+                <p className=" inline-block ">INVISION</p>
+                </div>
+          </div>
+          </div>
+        
+          </div>
+          </div>
+       
+        </>
     );
 };
 
