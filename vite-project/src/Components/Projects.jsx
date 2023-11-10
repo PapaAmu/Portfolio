@@ -6,6 +6,8 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
+  import GitHubIcon from '@mui/icons-material/GitHub';
+  import LanguageIcon from '@mui/icons-material/Language';
    
   export default function Projects() {
     return (
@@ -27,8 +29,11 @@ import {
                 Bellabheka is a catering and decor company that provides services to all kinds of events around Durban.
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read More</Button>
+            <CardFooter className="pt-2">
+            <div className="icons text-center">
+              <GitHubIcon />
+              <LanguageIcon />
+            </div>
             </CardFooter>
           </Card>
         </div>
@@ -46,8 +51,11 @@ import {
                 Personal portfolio website to showcase skills acquired and projects built along with the impacts it derives.
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read More</Button>
+            <CardFooter className="pt-2">
+            <div className="icons text-center ">
+              <GitHubIcon  />
+              <LanguageIcon />
+            </div>
             </CardFooter>
           </Card>
         </div>
@@ -65,8 +73,11 @@ import {
               A application that checks for fraudulent activities by analyzing card transactions.
               </Typography>
             </CardBody>
-            <CardFooter className="pt-0">
-              <Button>Read More</Button>
+            <CardFooter className="pt-5">
+            <div className="icons text-center">
+              <GitHubIcon />
+              <LanguageIcon />
+            </div>
             </CardFooter>
           </Card>
         </div>
