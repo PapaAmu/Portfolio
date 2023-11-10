@@ -81,10 +81,7 @@ import {
             </CardFooter>
           </Card>
         </div>
-    
-       
       </div>
     </div>
-    
     );
   }
