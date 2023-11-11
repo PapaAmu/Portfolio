@@ -22,7 +22,7 @@ import {
               <img src="public/images/Bellabheka website.png" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold ">
                 Bellabheka Website
               </Typography>
               <Typography color="blue-gray">
@@ -44,7 +44,7 @@ import {
               <img src="public/images/Portfolio Website.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold ">
                 Personal Portfolio
               </Typography>
               <Typography color="blue-gray">
@@ -60,13 +60,13 @@ import {
           </Card>
         </div>
 
-        <div className="w-full md:w-96 border-black">
-          <Card className="mt-6">
+        <div className="w-full md:w-96">
+          <Card className="mt-6 border-black">
             <CardHeader color="blue-gray" className="relative h-46">
             <img src="public/images/Fruad Detector.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2">
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold">
                 Fruad Detector
               </Typography>
               <Typography color="blue-gray">
