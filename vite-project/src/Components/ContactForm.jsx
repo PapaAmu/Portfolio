@@ -6,7 +6,8 @@ import {
     Typography,
   } from "@material-tailwind/react";
   import { Textarea } from "@material-tailwind/react";
-   
+  import {useForm} from "react-hook-form"
+     
   export  default function ContactForm() {
     return (
         <div className="mx-auto my-8 mb-4">
