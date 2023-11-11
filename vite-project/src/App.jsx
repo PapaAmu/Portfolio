@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-import Nav from './Components/Nav'
+import Navbar from './Components/Navbar'
 import Home from './Components/Home';
 import About from './Components/About';
 import TechnicalSkills from './Components/TechnicalSkills';
@@ -13,7 +13,7 @@ import Footer from './Components/Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Nav />}>
+    <Route path="/" element={<Navbar />}>
       <Route path="/Home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/technicalskills" element={<TechnicalSkills />} />
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
 function App({routes}) {
   return (
     <>
-      <Nav />
+      <Navbar />
       <Home />
       <About />
       <TechnicalSkills />
