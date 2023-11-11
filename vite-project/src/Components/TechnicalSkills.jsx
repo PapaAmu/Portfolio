@@ -13,7 +13,7 @@ const TechnicalSkills = () => {
           <div className="md:columns-2 mt-2 gap-6 first-column sm:columns-2-xs">
          
           <div className="grid grid-rows-3 gap-2 ">
-          <h2 className="font-semibold tech-skill mt-4 text-center">Languages</h2>
+          <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Languages</h2>
           <div className="grid  grid-cols-3 gap-3 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/HTML5.png" className="h-5 w-6 inline-block"/>
@@ -33,7 +33,7 @@ const TechnicalSkills = () => {
           </div>
           
           <div className="grid grid-rows-3 gap-2 ">
-          <h2 className="font-semibold tech-skill  text-center">Libraries</h2>
+          <h2 className="font-semibold tech-skill  text-center text-indigo-500 ">Libraries</h2>
           <div className="grid grid-cols-3 gap-3 text-center items-center">
                 <div className="inline-block outline outline-blue-500  rounded-md">
                 <img src="public/svg/Jquery.png" className="h-6 w-6 inline-block" />
@@ -57,7 +57,7 @@ const TechnicalSkills = () => {
           <div className="md:columns-2 gap-8 second-column sm:columns-2-xs">
 
           <div className="grid grid-rows-1 gap-4 ">
-          <h2 className="font-semibold tech-skill float-left mt-6 text-center">Version control systems</h2>
+          <h2 className="font-semibold tech-skill float-left mt-6 text-center text-indigo-500 ">Version control systems</h2>
           <div className="grid  gap-4 grid-cols-2 text-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Git.png" className="h-7 w-7 inline-block" />
@@ -72,7 +72,7 @@ const TechnicalSkills = () => {
           </div>
 
           <div className="grid grid-rows-2 gap-4">
-          <h2 className="font-semibold tech-skill mt-6 text-center">CSS Frameworks</h2>
+          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">CSS Frameworks</h2>
           <div className="grid  grid-cols-2 gap-4 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Boostrap.png" className="h-5 w-5 inline-block"/>
@@ -88,7 +88,7 @@ const TechnicalSkills = () => {
           </div>
 
           <div className="grid grid-rows-1 gap-4">
-          <h2 className="font-semibold tech-skill mt-6 text-center">Frameworks</h2>
+          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">Frameworks</h2>
           <div className="grid gap-2 grid-cols-2">
                 <div className="outline outline-blue-500  inline-block rounded-md text-center items-center">
                 <img src="public/svg/React.png" className="h-6 w-6 inline-block"/>
@@ -98,7 +98,7 @@ const TechnicalSkills = () => {
           </div>
          
           <div className="grid grid-rows-2 gap-2">
-          <h2 className="font-semibold tech-skill mt-6 text-center">API's</h2>
+          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">API's</h2>
           <div className="grid grid-cols-2 gap-4 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Rest API.png" className="h-6 w-6 inline-block" />
@@ -113,7 +113,7 @@ const TechnicalSkills = () => {
           </div>
         
           <div className="grid grid-rows-2  gap-4 ">
-          <h2 className="font-semibold tech-skill mt-4 text-center">Database</h2>
+          <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Database</h2>
           <div className="grid  grid-cols-2 gap-4 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Mysql.png" className="h-7 w-7 inline-block"/>
@@ -128,7 +128,7 @@ const TechnicalSkills = () => {
           </div>
 
           <div className="grid grid-rows-1 gap-4 ">
-          <h2 className="font-semibold tech-skill mt-6 text-center">Design</h2>
+          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">Design</h2>
           <div className="grid grid-cols-2 gap-4 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Figma.png" className="h-7 w-7 inline-block"/>
