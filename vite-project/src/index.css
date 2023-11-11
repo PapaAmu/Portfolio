@@ -38,7 +38,14 @@
   .Head-shot {
     align-items: center;
     margin-left: 7rem;
+    margin-bottom: 2rem;
   }
+}
+.navabr{
+  background-color:white !important;
+}
+#NavList {
+  background-color: rgb(99 102 241) !important;
 }
 
 
