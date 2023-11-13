@@ -26,13 +26,13 @@ import {useForm} from "react-hook-form";
                 variant="outlined"
                 size="lg"
                 placeholder="Name here..."
-                className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+                className=" !border-t-blue-gray-900 focus:!border-t-gray-900"
                 labelProps={{
                   className: "before:content-none after:content-none"
                 }}
-                {...register("FullName", {required: 'FullName is required', minLength:{value:20, message: "Min length is 20"}})}
+                {...register("FullName", {required: 'fullname is required', minLength:{value:20, message: "Min length is 20"}})}
                 />
-                <p>{errors.FullName?.message}</p>
+                <p className="errormessage font-size-sm color:red">{errors.FullName?.message}</p>
             <Typography vvariant="static" color="blue-gray" className="-mb-3">
               Email Adress
             </Typography>
@@ -40,13 +40,13 @@ import {useForm} from "react-hook-form";
               variant="outlined"
               size="lg"
               placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
+              className=" !border-t-blue-gray-900 focus:!border-t-gray-900"
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
               {...register("Email",{required:'email is required', minLength:{value:10, message:'Min length is 20'}})}
             />
-            <p>{errors.Email?.message}</p>
+            <p className="errormessage font-size-sm color:red">{errors.Email?.message}</p>
             <div className="flex w-70 flex-col gap-6">
             <Typography vvariant="static" color="blue-gray" className="-mb-3">
               Message
@@ -54,7 +54,7 @@ import {useForm} from "react-hook-form";
             <Textarea variant="outlined"  placeholder="Anything in mind ..."
             {...register("Message", {required: 'You gotta say something'})}
              />
-             <p>{errors.Message?.message}</p>
+             <p className="errormessage font-size-sm color:red">{errors.Message?.message}</p>
             </div>
           </div>
           <Button className="mt-6" fullWidth>
