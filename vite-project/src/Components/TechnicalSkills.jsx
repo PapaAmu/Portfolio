@@ -25,9 +25,9 @@ const TechnicalSkills = () => {
                 <p className="inline-block">CSS</p>
                 </div>
 
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/Javascript_logo.png" className="h-5 w-6 inline-block"/>
-                <p className="inline-block">JAVASCRIPT</p>
+                <div className="inline-block outline outline-blue-500 rounded-md JS">
+                <img src="public/svg/Javascript_logo.png" className="h-4 w-5 inline-block Javascript_logo items-center"/>
+                <p className="inline-block javascript">JAVASCRIPT</p>
                 </div>
           </div>
           </div>
