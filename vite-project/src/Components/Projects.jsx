@@ -31,8 +31,12 @@ import {
             </CardBody>
             <CardFooter className="pt-2">
             <div className="icons text-center">
+              <a href="https://github.com/HlobisileLukhele/BellaBheka-Website-" target="_blank">
               <GitHubIcon />
+              </a>
+              <a href="https://bellabheksa-website.netlify.app/" target="_blank">
               <LanguageIcon />
+              </a>
             </div>
             </CardFooter>
           </Card>
@@ -53,7 +57,9 @@ import {
             </CardBody>
             <CardFooter className="pt-2">
             <div className="icons text-center ">
-              <GitHubIcon  />
+              <a href="https://github.com/HlobisileLukhele/Portfolio" target="_blank">
+              <GitHubIcon />
+              </a>
               <LanguageIcon />
             </div>
             </CardFooter>
@@ -75,7 +81,6 @@ import {
             </CardBody>
             <CardFooter className="pt-5">
             <div className="icons text-center">
-              <GitHubIcon />
               <LanguageIcon />
             </div>
             </CardFooter>
