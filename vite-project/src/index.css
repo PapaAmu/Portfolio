@@ -37,19 +37,34 @@
   /*Home head shot image */
   .Head-shot {
     align-items: center;
-    margin-left: 7rem;
-    margin-bottom: 2rem;
+    margin: 1rem 0rem 2rem 4.5rem;
+  }
+  .javascript-logo img{
+    padding-right: 5px;
+    align-items: center;
+  }
+  .javascript {
+    font-size: 13px;
+  }
+  .JS{
+    width: fit-content !important; 
+    align-items: center;
   }
 }
 .navabr{
-  background-color:white !important;
+  background-color:rgb(25,118,210) !important;
 }
 #NavList {
-  background-color: rgb(99 102 241) !important;
+  background-color: rgb(25,118,210) !important;
 }
-
-
-
+.javascript {
+  font-size: 13px;
+}
+.errormessage {
+  color: red;
+  font-size: small;
+  text-align: right;
+}
 
 
 
