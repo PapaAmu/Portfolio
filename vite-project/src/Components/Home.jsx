@@ -7,22 +7,22 @@ import MailIcon from '@mui/icons-material/Mail';
 
 function Home() {
     return (
-     <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-5 justify-center text-lg gap-2  " >
+     <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-5 justify-center text-lg gap-2" >
      <div className="md:flex">
-     <div className="p-6">
+     <div className="md:p-4">
       <div className="uppercase tracking-wide text-2xl text-black font-semibold text-center leading-relaxed">Hi, I am</div>
        <p className="block mt-1 text-4xl leading-tight text-blachover:underline text-indigo-500 font-semibold mb-2 tracking-wide text-center">Jenise Lukhele</p>
        <p className="text-slate-200 text-black text-2xl font-semibold text-center mb-3">Fronted Developer</p>
        <div className="sm:flex text-center ml-5">
        <Button variant="outlined" size="sm" className='mt-6 me-2 items-center'>
-       <DownloadForOfflineIcon />
-       <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume" >
-       </a>
-       <span className="ml-1 font-size-md">
+       <span className="mr-1 md:font-size-md ">
        Resume
        </span>
+       <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume" >
+       <DownloadForOfflineIcon className="sm" />
+       </a>
         </Button>
-        <Button variant="filled" size="sm" className='mt-6 me-2'>
+        <Button variant="filled" size="md" className='mt-6 me-2'>
            Get In Touch
         </Button>
        </div>
@@ -32,7 +32,6 @@ function Home() {
     </div>
     </div>
 </div>
-
     );
 }
  export default Home;
