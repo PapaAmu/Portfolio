@@ -37,7 +37,8 @@
   /*Home head shot image */
   .Head-shot {
     align-items: center;
-    margin: 1rem 0rem 2rem 4.5rem;
+    margin: 2.5rem 0rem 5rem 4.5rem;
+    height: fit-content;
   }
   .javascript-logo img{
     padding-right: 5px;
