@@ -30,7 +30,7 @@ import {useForm} from "react-hook-form";
                 labelProps={{
                   className: "before:content-none after:content-none"
                 }}
-                {...register("FullName", {required: 'fullname is required', minLength:{value:20, message: "Min length is 20"}})}
+                {...register("FullName", {required: 'fullname is required', minLength:{value:10, message: "Min length is 10"}})}
                 />
                 <p className="errormessage font-size-sm color:red">{errors.FullName?.message}</p>
             <Typography vvariant="static" color="blue-gray" className="-mb-3">
@@ -44,7 +44,7 @@ import {useForm} from "react-hook-form";
               labelProps={{
                 className: "before:content-none after:content-none",
               }}
-              {...register("Email",{required:'email is required', minLength:{value:10, message:'Min length is 20'}})}
+              {...register("Email",{required:'email is required', minLength:{value:10, message:'Min length is 10'}})}
             />
             <p className="errormessage font-size-sm color:red">{errors.Email?.message}</p>
             <div className="flex w-70 flex-col gap-6">
