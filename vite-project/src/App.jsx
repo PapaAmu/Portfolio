@@ -38,4 +38,8 @@ function App({routes}) {
   );
 }
 
+<RouterProvider
+    router={router}
+  />
+
 export default App;
