@@ -5,9 +5,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 
+
 function Home() {
     return (
-     <div className="max-w-md mx-auto overflow-hidden md:max-w-2xl mt-5 justify-center text-lg gap-2" >
+     <div className=" home-component max-w-md mx-auto overflow-hidden md:max-w-2xl mt-6 mb-12 justify-center text-lg gap-2" >
      <div className="md:flex">
      <div className="md:p-8">
       <div className="uppercase tracking-wide text-2xl text-black font-semibold text-center leading-relaxed">Hi, I am</div>
@@ -30,6 +31,20 @@ function Home() {
     <div className="flex mx-auto sm:justify-items-center ">
       <img className="Head-shot md:h-60 md:w-70 mb-4, lg:h-60 md:w-60 mb-4, sm:h-60 w-60 text-center  rounded-full object-cover object-center"src="public/images/head-shot image.png" alt="Head-shot image" />
     </div>
+    </div>
+    <div className='social-icons  mt-14 mb-4 '>
+      <div className="container-fluid text-left social-links gap-6 ml-16 fa-3xl">
+                <a href="https://www.linkedin.com/in/hlobisile-lukhele-8812b9183/" target="_blank">
+                    <LinkedInIcon style={{ color: "indigo"}} />                  
+                </a>
+                <a href="https://github.com/HlobisileLukhele" target="_blank">
+                      <GitHubIcon style={{ color: "indigo" }} />
+                </a>
+
+                <a href="https://www.n.thwala03@gmail.com/" target="_blank">
+                      <MailIcon style={{ color: "indigo" }} />
+                </a>
+            </div>
     </div>
 </div>
     );
