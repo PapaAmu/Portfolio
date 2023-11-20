@@ -1,108 +1,99 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  Navbar,
+  Collapse,
+  Typography,
+  IconButton,
+} from "@material-tailwind/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {Link} from "react-router-dom";
 
-
-const drawerWidth = 240;
-const navItems = ['Home','About','Techical skills','Projects','Contact',];
-
-function DrawerAppBar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        h.
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  const container = window !== undefined ? () => window().document.body : undefined;
-
+ function NavList() {
   return (
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar component="nav" className="navbar">
-        <Toolbar>
-          <IconButton
-            background-color="white"
-            color="indingo-500"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            h.
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-      </Box>
-    </Box>
+    <ul className="flex flex-row gap-7 justify-end ">
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/Home" className="hover:text-blue-500 transition-colors">
+          Home
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/about" className="hover:text-blue-500 transition-colors">
+          About
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/TechnicalSkills" className="hover:text-blue-500 transition-colors">
+          TechnicalSkills
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/Projects" className="hover:text-blue-500 transition-colors">
+          Projects
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium"
+      >
+        <Link to="/Contact" className="hover:text-blue-500 transition-colors">
+          Contact
+        </Link>
+      </Typography>
+    </ul>
   );
 }
 
+export default  function  NavbarSimple() {
+  const [openNav, setOpenNav] = React.useState(false);
+ 
+  const handleWindowResize = () =>
+    window.innerWidth >= 960 && setOpenNav(false);
+ 
+  React.useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+ 
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
+  return (
+    <Navbar className="mx-auto px-6 py-3 max-w-full mb-16">
+      <div className="flex items-center justify-between text-indigo-500">
+        <Typography
+          as="a"
+          href="#"
+          variant="h2"
+          className="mr-4 cursor-pointer py-1.5"
+        >
+         h.
+        </Typography>
 
-export default DrawerAppBar;
+       
+        <NavList />
+      </div>
+    </Navbar>
+  );
+}
