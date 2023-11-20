@@ -51,7 +51,19 @@
     width: fit-content !important; 
     align-items: center;
   }
+  .social-icons {
+    text-align: center;
+  } 
+  .home-component {
+    margin-top : 25px;
+  }
 }
+.home-component {
+  margin-top : 75px;
+}
+.social-icons {
+  text-align: center;
+} 
 .navabr{
   background-color:rgb(25,118,210) !important;
 }
