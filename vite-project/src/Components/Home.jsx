@@ -32,17 +32,17 @@ function Home() {
       <img className="Head-shot md:h-60 md:w-70 mb-4, lg:h-60 md:w-60 mb-4, sm:h-60 w-60 text-center  rounded-full object-cover object-center"src="public/images/head-shot image.png" alt="Head-shot image" />
     </div>
     </div>
-    <div className='social-icons  mt-14 mb-4 '>
-      <div className="container-fluid text-left social-links gap-6 ml-16 fa-3xl">
+    <div className='social-icons mt-10 mb-8 '>
+      <div className="container-fluid text-left social-links gap-6 ml-16 fa-3xl ">
                 <a href="https://www.linkedin.com/in/hlobisile-lukhele-8812b9183/" target="_blank">
-                    <LinkedInIcon style={{ color: "indigo"}} />                  
+                    <LinkedInIcon style={{ color: "indigo",fontSize: "32px", margin:"3px"}} />                  
                 </a>
                 <a href="https://github.com/HlobisileLukhele" target="_blank">
-                      <GitHubIcon style={{ color: "indigo" }} />
+                      <GitHubIcon style={{ color: "indigo",fontSize: "32px", margin:"3px" }} />
                 </a>
 
                 <a href="https://www.n.thwala03@gmail.com/" target="_blank">
-                      <MailIcon style={{ color: "indigo" }} />
+                      <MailIcon style={{ color: "indigo",fontSize: "32px", margin:"3px" }} />
                 </a>
             </div>
     </div>
