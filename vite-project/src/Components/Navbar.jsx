@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 
  function NavList() {
   return (
-    <ul className="flex flex-row gap-7 justify-end ">
+    <ul className="flex flex-row gap-6 justify-end ">
       <Typography
         as="li"
         variant="small"
@@ -38,7 +38,7 @@ import {Link} from "react-router-dom";
         className="p-1 font-medium"
       >
         <Link to="/TechnicalSkills" className="hover:text-blue-500 transition-colors">
-          TechnicalSkills
+          Skills
         </Link>
       </Typography>
       <Typography
@@ -65,11 +65,12 @@ import {Link} from "react-router-dom";
   );
 }
 
-export default  function  NavbarSimple() {
+
+ export default  function  NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);
  
   const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
+    window.innerWidth < 620 && setOpenNav(false);
  
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -83,8 +84,8 @@ export default  function  NavbarSimple() {
     <Navbar className="mx-auto px-6 py-3 max-w-full mb-16">
       <div className="flex items-center justify-between text-indigo-500">
         <Typography
-          as="a"
-          href="#"
+          as=""
+          link to ="/"
           variant="h2"
           className="mr-4 cursor-pointer py-1.5"
         >
