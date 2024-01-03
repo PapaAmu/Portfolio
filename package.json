@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "create-vite": "^4.4.1",
-    "form": "^0.2.4",
-    "react-hooks": "^1.0.1"
-  }
-}
