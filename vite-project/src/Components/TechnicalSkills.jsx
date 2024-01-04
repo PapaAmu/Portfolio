@@ -13,7 +13,7 @@ const TechnicalSkills = () => {
           <div className="md:columns-2 mt-2 gap-6 first-column sm:columns-2-xs">
          
           <div className="grid grid-rows-3 gap-2 ">
-          <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Languages</h2>
+          <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Stack</h2>
           <div className="grid  grid-cols-3 gap-3 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/HTML5.png" className="h-5 w-6 inline-block"/>
