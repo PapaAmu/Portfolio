@@ -123,20 +123,7 @@ const TechnicalSkills = () => {
           </div>
           </div>
 
-          <div className="grid grid-rows-1 gap-4 ">
-          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">Design</h2>
-          <div className="grid grid-cols-2 gap-4 text-center items-center">
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/Figma.png" className="h-7 w-7 inline-block"/>
-                <p className="inline-block">FIGMA</p>
-                </div>
-
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/Invision.png" className="h-5 w-5 inline-block rounded-md"/>
-                <p className=" inline-block ">INVISION</p>
-                </div>
-          </div>
-          </div>
+          
         
           </div>
           </div>
