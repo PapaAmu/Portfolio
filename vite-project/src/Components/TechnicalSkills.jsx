@@ -88,7 +88,6 @@ const TechnicalSkills = () => {
           </div>
         
           <div className="grid grid-rows-2  gap-4 ">
-          <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Database</h2>
           <div className="grid  grid-cols-2 gap-4 text-center items-center">
                 <div className="inline-block outline outline-blue-500 rounded-md">
                 <img src="public/svg/Mysql.png" className="h-7 w-7 inline-block"/>
