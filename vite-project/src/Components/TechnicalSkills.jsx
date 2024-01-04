@@ -115,11 +115,6 @@ const TechnicalSkills = () => {
                 <img src="public/svg/Mysql.png" className="h-7 w-7 inline-block"/>
                 <p className="inline-block">MYSQL</p>
                 </div>
-
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/MongoDB.png"className="h-7 w-7 inline-block"/>
-                <p className="inline-block">MONGODB</p>
-                </div>
           </div>
           </div>
 
