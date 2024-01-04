@@ -92,21 +92,6 @@ const TechnicalSkills = () => {
                 </div>
           </div>
           </div>
-         
-          <div className="grid grid-rows-2 gap-2">
-          <h2 className="font-semibold tech-skill mt-6 text-center text-indigo-500 ">API's</h2>
-          <div className="grid grid-cols-2 gap-4 text-center items-center">
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/Rest API.png" className="h-6 w-6 inline-block" />
-                <p className="inline-block">RESTFUL API</p>
-                </div>
-                
-                <div className="inline-block outline outline-blue-500 rounded-md">
-                <img src="public/svg/Graphql.png" className="h-6 w-6 inline-block" />
-                <p className="inline-block">GRAPHQL</p>
-                </div>
-          </div>
-          </div>
         
           <div className="grid grid-rows-2  gap-4 ">
           <h2 className="font-semibold tech-skill mt-4 text-center text-indigo-500 ">Database</h2>
