@@ -8,9 +8,11 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {Link} from "react-router-dom";
 
- function NavList() {
+
+
+function NavList() {
   return (
-    <ul className="flex flex-row gap-6 justify-end ">
+    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -37,7 +39,7 @@ import {Link} from "react-router-dom";
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link to="/TechnicalSkills" className="hover:text-blue-500 transition-colors">
+       <Link to="/TechnicalSkills" className="hover:text-blue-500 transition-colors">
           Skills
         </Link>
       </Typography>
@@ -51,26 +53,26 @@ import {Link} from "react-router-dom";
           Projects
         </Link>
       </Typography>
-      <Typography
+
+<Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <Link to="/Contact" className="hover:text-blue-500 transition-colors">
+         <Link to="/Contact" className="hover:text-blue-500 transition-colors">
           Contact
         </Link>
       </Typography>
     </ul>
   );
 }
-
-
- export default  function  NavbarSimple() {
+ 
+export default function NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);
  
   const handleWindowResize = () =>
-    window.innerWidth < 620 && setOpenNav(false);
+    window.innerWidth >= 1024 && setOpenNav(false);
  
   React.useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
@@ -79,22 +81,37 @@ import {Link} from "react-router-dom";
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
+ 
   return (
-    <Navbar className="mx-auto px-6 py-3 max-w-full mb-16">
-      <div className="flex items-center justify-between text-indigo-500">
+    <Navbar className="mx-auto max-w-screen-xl px-6 py-3">
+      <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
-          as=""
-          link to ="/"
-          variant="h2"
+          as="a"
+          href="#"
+          variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-         h.
+          Material Tailwind
         </Typography>
-
-       
-        <NavList />
+        <div className="hidden lg:block">
+          <NavList />
+        </div>
+        <IconButton
+          variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+          ) : (
+            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+          )}
+        </IconButton>
       </div>
+      <Collapse open={openNav}>
+        <NavList />
+      </Collapse>
     </Navbar>
   );
 }
