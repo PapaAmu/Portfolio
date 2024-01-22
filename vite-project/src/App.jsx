@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css'
 import './index.css'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
@@ -15,7 +14,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
       <Route path="Navbar" element={<Navbar />} />
-      <Route path="/about/:id" element={<About />} />
+      <Route path="/about" element={<About />} />
       <Route path="technicalskills" element={<TechnicalSkills />} />
       <Route path="projects" element={<Projects />} />
       <Route path="contactForm" element={<ContactForm />} />
