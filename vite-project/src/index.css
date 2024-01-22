@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Responsive for large screen*/
 @media (min-width: 600px) {
   .more-info {
@@ -14,7 +13,6 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center !important;
   align-items: center;
-
 }
 /* For small screens, display columns as a single column */
 @media (max-width: 667px) {
@@ -52,24 +50,22 @@
     align-items: center;
   }
   .social-icons {
-    text-align: center;
+    align-items: center !important;
+    margin-left: 50px !important;
+    word-spacing: 30px;
+    margin-top: 0 !important;
+    font-size: 38px !important;
   } 
   .home-component {
     margin-top : 25px;
   }
-}
 .home-component {
   margin-top : 75px;
 }
 .social-icons {
   text-align: center;
 } 
-.navabr{
-  background-color:rgb(25,118,210) !important;
-}
-#NavList {
-  background-color: rgb(25,118,210) !important;
-}
+
 .javascript {
   font-size: 13px;
 }
@@ -79,5 +75,6 @@
   text-align: right;
 }
 
+}
 
 
