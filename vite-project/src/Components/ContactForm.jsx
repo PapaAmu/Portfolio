@@ -1,11 +1,9 @@
-import {Card,Input,Checkbox,Button,Typography,} from "@material-tailwind/react";
+import {Card,Input,Button,Typography,} from "@material-tailwind/react";
 import { Textarea } from "@material-tailwind/react";
-import { propTypesDefaultValue } from "@material-tailwind/react/types/components/slider";
 import {useForm} from "react-hook-form";
 
   export  default function ContactForm() {
-    const {register, handleSubmit, formState: {errors} } = useForm();
-    const onSubmit = data => console.log(data);
+    const {register, formState: {errors} } = useForm();
     console.log(errors);
     return (
         <div className="mx-auto my-8 mb-4">
@@ -13,11 +11,7 @@ import {useForm} from "react-hook-form";
         <Typography variant="h4" color="blue-gray">
          Get In  Touch
         </Typography>
-        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 items-center"
-        onSubmit={handleSubmit((data) =>{
-          consol.log(data);
-        })}
-        >
+        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 items-center">
           <div className="mb-1 flex flex-col gap-4">
             <Typography vvariant="static" color="blue-gray" className="-mb2">
               Full Name
