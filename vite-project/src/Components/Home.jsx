@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
 
 
+
 function Home() {
     return (
      <div className=" home-component max-w-md mx-auto overflow-hidden md:max-w-2xl mt-6 mb-12 justify-center text-lg gap-2" >
@@ -43,6 +44,7 @@ function Home() {
                 <a href="https://www.n.thwala03@gmail.com/" rel="noreferrer" target="_blank">
                       <MailIcon style={{ color: "black",fontSize: "34px", margin:"5px" }} />
                 </a>
+
             </div>
     </div>
 </div>
