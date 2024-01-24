@@ -14,16 +14,17 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
       <Route path="Navbar" element={<Navbar />} />
-      <Route path="/about" element={<About />} />
+      <Route path="about" element={<About />} />
       <Route path="technicalskills" element={<TechnicalSkills />} />
       <Route path="projects" element={<Projects />} />
       <Route path="contactForm" element={<ContactForm />} />
       <Route path="contact" element={<Contact />} />
     </Route>
-  )
+  ) 
 )
 
-function App({routes}) {
+// eslint-disable-next-line react/prop-types
+function App({Route}) {
   return (
     <>
       <Navbar />
