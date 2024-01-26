@@ -1,6 +1,6 @@
 import './App.css'
 import './index.css'
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider,Outlet } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Home from './Components/Home';
 import About from './Components/About';
@@ -10,21 +10,28 @@ import Contact from './Components/Contact';
 import ContactForm from './Components/ContactForm';
 import Footer from './Components/Footer';
 
+const AppLayout = () => (
+  <>
+    <Navbar />
+    <Outlet />
+    <Footer />
+  </>
+);
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Home />}>
-      <Route path="Navbar" element={<Navbar />} />
+    <Route element={<AppLayout />}>
+      <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="technicalskills" element={<TechnicalSkills />} />
       <Route path="projects" element={<Projects />} />
       <Route path="contactForm" element={<ContactForm />} />
       <Route path="contact" element={<Contact />} />
     </Route>
-  ) 
+  )
 )
 
-// eslint-disable-next-line react/prop-types
-function App({Route}) {
+function App() {
   return (
     <>
       <Navbar />
@@ -41,5 +48,4 @@ function App({Route}) {
 <RouterProvider
     router={router}
   />
-
 export default App;
