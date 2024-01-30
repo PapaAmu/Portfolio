@@ -34,7 +34,6 @@ const router = createBrowserRouter(
 function App() {
   return (
     <>
-      <Navbar />
       <Home />
       <About />
       <TechnicalSkills />
