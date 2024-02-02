@@ -77,4 +77,8 @@
 
 }
 
-
+.border-skills {
+  align-items: center;
+  margin: 4px;
+  background-color: transparent;
+}
