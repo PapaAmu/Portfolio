@@ -1,0 +1,40 @@
+.contact-btn {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .button,.contact-btn .button__icon, .button__text-contact {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text-contact {
+    transform: translateX(21px);
+    color: var(--main-color);
+    font-weight: 600;
+  }
+  
+  .button:hover {
+    background: var(--main-color);
+  }
+  
+  .button:hover .button__text-contact {
+    color: var(--bg-color);
+  }
+  .button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
