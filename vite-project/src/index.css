@@ -49,13 +49,6 @@
     width: fit-content !important; 
     align-items: center;
   }
-  .social-icons {
-    align-items: center !important;
-    margin-left: 50px !important;
-    word-spacing: 30px;
-    margin-top: 0 !important;
-    font-size: 38px !important;
-  } 
   .home-component {
     margin-top : 25px;
   }
@@ -81,4 +74,11 @@
   align-items: center;
   margin: 4px;
   background-color: transparent;
+}
+
+.skill-icon img{
+  margin: 0 !important;
+  display: block !important;
+  align-items: center;
+
 }
