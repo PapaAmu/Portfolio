@@ -1,5 +1,4 @@
-    import  Resumebutton from './Resumebutton';
-import Contactbutton from './Contactbutton'
+import  Resumebutton from './Resumebutton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailIcon from '@mui/icons-material/Mail';
@@ -17,11 +16,9 @@ function Home() {
        <p className="text-slate-200 text-black text-2xl font-semibold text-center mb-3">Fronted Developer</p>
        <div className="sm:flex text-center ml-5">
        
-       <Resumebutton>
+       <Resumebutton className=''>
         <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume" />
         </Resumebutton>
-
-        <Contactbutton />
        </div>
     </div>
     <div className="flex mx-auto sm:justify-items-center ">
