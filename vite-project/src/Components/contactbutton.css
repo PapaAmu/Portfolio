@@ -11,13 +11,13 @@
     display: flex;
     align-items: center;
     border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--main-color);
-    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--bg-color);
+    background-color: var(--bg-color)-sub;
     border-radius: 10px;
     overflow: hidden;
   }
   
-  .button,.contact-btn .button__icon, .button__text-contact {
+  .button,.button__icon, .button__text-contact{
     transition: all 0.3s;
   }
   
@@ -28,7 +28,7 @@
   }
   
   .button:hover {
-    background: var(--main-color);
+    background: var(--bg-color);
   }
   
   .button:hover .button__text-contact {
