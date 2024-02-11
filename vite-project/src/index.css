@@ -76,9 +76,9 @@
   background-color: transparent;
 }
 
-.skill-icon img{
-  margin: 0 !important;
-  display: block !important;
-  align-items: center;
-
+.icons-skills {
+ display: inline-flex;
+ align-items: center;
+left: -50px !important;
+padding: left -40px;
 }
