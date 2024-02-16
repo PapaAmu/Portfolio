@@ -4,7 +4,6 @@ import {
     CardBody,
     CardFooter,
     Typography,
-    Button,
   } from "@material-tailwind/react";
   import GitHubIcon from '@mui/icons-material/GitHub';
   import LanguageIcon from '@mui/icons-material/Language';
@@ -31,10 +30,10 @@ import {
             </CardBody>
             <CardFooter className="pt-2">
             <div className="icons text-center">
-              <a href="https://github.com/HlobisileLukhele/BellaBheka-Website-" target="_blank">
+              <a href="https://github.com/HlobisileLukhele/BellaBheka-Website-" target="_blank" rel="noreferrer">
               <GitHubIcon />
               </a>
-              <a href="https://bellabheksa-website.netlify.app/" target="_blank">
+              <a href="https://bellabheksa-website.netlify.app/" target="_blank" rel="noreferrer">
               <LanguageIcon />
               </a>
             </div>
@@ -57,7 +56,7 @@ import {
             </CardBody>
             <CardFooter className="pt-2">
             <div className="icons text-center ">
-              <a href="https://github.com/HlobisileLukhele/Portfolio" target="_blank">
+              <a href="https://github.com/HlobisileLukhele/Portfolio" target="_blank" rel="noreferrer">
               <GitHubIcon />
               </a>
               <LanguageIcon />
@@ -79,7 +78,7 @@ import {
               A application that checks for fraudulent activities by analyzing card transactions.
               </Typography>
             </CardBody>
-            <CardFooter className="pt-5">
+            <CardFooter className="">
             <div className="icons text-center">
               <LanguageIcon />
             </div>
