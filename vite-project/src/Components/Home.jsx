@@ -1,46 +1,28 @@
 import  Resumebutton from './Resumebutton';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MailIcon from '@mui/icons-material/Mail';
-
-
+import Contactbutton from './Contactbutton'
 
 
 function Home() {
     return (
-     <div className=" home-component max-w-md mx-auto overflow-hidden md:max-w-2xl mt-6 mb-12 justify-center text-lg gap-2" >
+     <div className="row home-component pt-20 pb-4  justify-left" >
      <div className="md:flex">
-     <div className="md:p-8">
-      <div className="uppercase tracking-wide text-2xl text-black font-semibold text-center leading-relaxed">Hi, I am</div>
-       <p className="block mt-1 text-4xl leading-tight text-blachover:underline text-indigo-500 font-semibold mb-2 tracking-wide text-center">Jenise Lukhele</p>
-       <p className="text-slate-200 text-black text-2xl font-semibold text-center mb-3">Fronted Developer</p>
-       <div className="sm:flex text-center ml-5">
-       
-       <Resumebutton className=''>
-        <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume" />
+     <div className="col-sm-8 pr-10 pl-6">
+      <div className=" text-2xl text-black font-semibold text-left leading-relaxed ml-12 mr-12 space-x-3">Hello,</div>
+       <h5 className="name mt-1 text-4xl leading-relaxed  font-semibold mb-2 tracking-wide text-left pt-2 ml-12 mr-12 ">I am <span className="name-tag">Jenise</span> </h5>
+       <p className="text-slate-200 text-black text-left pt-8 mb-3 ml-12 mr-12 pb-4 text-md">Frontend developer and I love to convert <b>designs</b> to <b>code</b>. I have passion for breathing life into pixels and  making my clients happy one interface at a time.When I am not coding, I spend my time transforming complex technical concepts to clear and concise content through my blog posts.</p>
+       <p className="text-slate-200 text-black text-left pb-2  ml-12 mr-12 text-md">So if you are looking for someone who not only builds engaging and interacive user interfaces but also excels at translating complex tech jargons into clear accessible language, then I am your girl 😉.</p>
+       <div className="sm:flex text-left ml-12 mr-12 pr-15 pt-3 pb-9 ">
+       <Resumebutton className="pt-8 mr-10 sm:mt-4 mb-4">
+        <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume"/>
         </Resumebutton>
+        <Contactbutton />
        </div>
     </div>
-    <div className="flex mx-auto sm:justify-items-center ">
-      <img className="Head-shot md:h-60 md:w-70 mb-4, lg:h-60 md:w-60 mb-4, sm:h-60 w-60 text-center  rounded-full object-cover object-center"src="public/images/head-shot image.png" alt="Head-shot image" />
+    <div className="col-sm- sm:justify-items-center pt-8">
+      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center"src="public/images/head-shot.png" alt="Head-shot image" />
     </div>
     </div>
-    <div className='social-icons mt-2 mb-8 '>
-      <div className="container-fluid text-left social-links gap-6 ml-16 fa-3xl ">
-                <a href="https://www.linkedin.com/in/hlobisile-lukhele-8812b9183/" rel="noreferrer" target="_blank">
-                    <LinkedInIcon style={{ color: "black",fontSize: "34px", margin:"5px"}} />                  
-                </a>
-                <a href="https://github.com/HlobisileLukhele" rel="noreferrer" target="_blank">
-                      <GitHubIcon style={{ color: "black",fontSize: "34px", margin:"5px" }} />
-                </a>
-
-                <a href="https://www.n.thwala03@gmail.com/" rel="noreferrer" target="_blank">
-                      <MailIcon style={{ color: "black",fontSize: "34px", margin:"5px" }} />
-                </a>
-
-            </div>
     </div>
-</div>
     );
 }
  export default Home;
