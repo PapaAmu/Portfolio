@@ -21,7 +21,7 @@ import {
               <img src="public/images/Bellabheka website.png" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold ">
+              <Typography variant="h5" color="blue-gray" className="name-tag mb-2  font-semibold ">
                 Bellabheka Website
               </Typography>
               <Typography color="blue-gray">
@@ -29,7 +29,7 @@ import {
               </Typography>
             </CardBody>
             <CardFooter className="pt-2">
-            <div className="icons text-center">
+            <div className="icons text-center name-tag">
               <a href="https://github.com/HlobisileLukhele/BellaBheka-Website-" target="_blank" rel="noreferrer">
               <GitHubIcon />
               </a>
@@ -47,7 +47,7 @@ import {
               <img src="public/images/Portfolio Website.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold ">
+              <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold ">
                 Personal Portfolio
               </Typography>
               <Typography color="blue-gray">
@@ -71,7 +71,7 @@ import {
             <img src="public/images/Fruad Detector.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-indigo-500 font-semibold">
+              <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold">
                 Fruad Detector
               </Typography>
               <Typography color="blue-gray">
@@ -80,7 +80,7 @@ import {
             </CardBody>
             <CardFooter className="">
             <div className="icons text-center">
-              <LanguageIcon />
+            <LanguageIcon />
             </div>
             </CardFooter>
           </Card>
