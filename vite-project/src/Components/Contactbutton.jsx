@@ -4,7 +4,7 @@ const Contactbutton = () => {
       return (
         <> 
         <button type="contact-btn,button me-4 mr-4 mt-4" className="button">
-          <span className="button__text-contact">Hire Me</span>
+          <span className="btn btn-primary">Hire Me</span>
         </button>
         </>
       );
