@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ /*styling th navbar */
 
 /* Responsive for large screen*/
 @media (min-width: 600px) {
@@ -19,6 +20,10 @@
   .columns-2 {
     grid-template-columns: 1fr;
     line-height: normal;
+  }
+  .name-tag{
+    color: #2693FF !important;
+    
   }
 
   .first-column {
@@ -69,11 +74,70 @@
 }
 
 }
-
 .border-skills {
   align-items: center;
   margin: 4px;
   background-color: transparent;
 }
+*/styling the contact form*/
 
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
 
+.contact-form {
+  width: 400px; 
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color:black !important;
+  font-weight:bold;
+  align-items: left !important;
+  padding-bottom: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.button-contact {
+  background-color: black !important;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 20px !important;
+  cursor: pointer;  
+}
+
+.button-contact:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1pt solid black;
+}
+.error {
+  color:red;
+  font-size:12px;
+  text-align:left;
+  font-style: italic;
+}
+
+/*styling the contact section */
+.heading-text {
+  font-size:30px;
+  font-weight:bold;
+
+}
