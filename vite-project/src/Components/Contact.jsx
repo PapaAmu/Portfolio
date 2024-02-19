@@ -1,16 +1,24 @@
 import ContactForm from './ContactForm';
+import './contactbutton.css'
 
 const Contact = () => {
-    return (   
-    <div className="grid grid-cols-4 gap-0 ">
-    <div className="col-span-2 col-start-1 col-end-4 ">
+    return ( 
+        <>  
+    <div className="container-fluid mt-6">
+    <div className='container hook-up-para '> 
+     <div className="row font-serif">
+    <div className="col-sm-7 pt-20  pl-10 text-center">
+      <h1 className="heading-text tracking-wide pt-16">Hire Me Today</h1>
+      <p className="hook-up-line">Let us bring your products to life</p>
+      <button className="btn btn-secondary message mb-4 mt-4 "> Shoot me a Message 👉</button>
+    </div>
+    <div className="col-sm-5 text-left pr-8 pt-18">
     <ContactForm />
     </div>
-    <div className='illustration grid-span-3'>
-        <h1 className="text-3xl font-bold text-gray-800">Contact Us</h1>
-        <img src="./public/images/illustration.png" />
     </div>
     </div>
+    </div>
+  </>  
     );
 };
 
