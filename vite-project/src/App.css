@@ -7,3 +7,6 @@
 .App {
   color:var(--button-text);
 }
+.horizontal-line {
+  background-color:black !important;
+}
