@@ -1,40 +1,96 @@
-.contact-btn {
-    --main-focus: #2d8cf0;
-    --font-color: #dedede;
-    --bg-color-sub: #222;
-    --bg-color: #323232;
-    --main-color: #dedede;
-    position: relative;
-    width: 150px;
-    height: 40px;
-    cursor: pointer;
+.btn-primary {
+  padding: 8px 33px 5px 33px !important;
+  background-color: white !important;
+  color: #2693FF !important;
+  border-radius:11px !important;
+  margin-top: 3px !important;
+  font-weight: bold !important;
+  border: 1pt solid #2693FF !important;
+
+}
+.btn-primary:hover {
+  background-color: #2693FF !important;
+  color: white !important;
+  transition: 1 sec ease-in !important;
+}
+  /*styling the technical skills card sections*/
+  .card {
+    background-color: black !important;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    border: 2px solid var(--main-color);
-    box-shadow: 4px 4px var(--bg-color);
-    background-color: var(--bg-color)-sub;
-    border-radius: 10px;
-    overflow: hidden;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 8px; 
+    color:#2693FF !important;
   }
   
-  .button,.button__icon, .button__text-contact{
-    transition: all 0.3s;
+  .card img {
+    max-width: 80%;
+    height: auto;
+    color:white !important;
+
   }
-  
-  .button .button__text-contact {
-    transform: translateX(21px);
-    color: var(--main-color);
-    font-weight: 600;
+  .card-title {
+    margin-top: 20px;
+    color:white;
   }
-  
-  .button:hover {
-    background: var(--bg-color);
+  .card:hover {
+    background-color: #2693FF !important;
+    color: white !important;
   }
-  
-  .button:hover .button__text-contact {
-    color: var(--bg-color);
+  /*styling the contact section */
+  .heading-text {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: white !important;
+    font-family: helvetica;
+    word-spacing: 8px;
   }
-  .button:active {
-    transform: translate(3px, 3px);
-    box-shadow: 0px 0px var(--main-color);
+  .hook-up-line {
+    font-size:25px;
+    font-family: roboto, sans-serif;
+    color: black;
+  }
+  .hook-up-para {
+    width: 75%;
+    height:80%;
+    background-color: #2693FF !important;
+
+  }
+  .bg-dark {
+    background-color: #2693FF !important;
+  }
+  .btn-secondary {
+    font-size: 20px;
+    margin: 40px;
+    padding: 20px !important;
+    background-color: transparent !important;
+    color: white;
+    border: 1pt solid black !important;
+
+  }
+  .btn-secondary:hover {
+    background-color:white !important;
+    color:#2693FF !important;
+    transition: 1 sec ease-in;
+    border: 1pt solid #0a5db0 !important;
+  }
+  .name-tag {
+    color: #2693FF !important;
+    font-family: sans-serif;
+    word-spacing: 8px;
+    font-family: verdana;
+  }
+  /*styling the navabar */ 
+
+  .nav-link, .nav-item {
+    color:white;
+  }
+  .square {
+    height: 10px;
+    margin:8px;
+    width: 20px;
+    background-color: #2693FF;
   }
