@@ -79,7 +79,7 @@
   margin: 4px;
   background-color: transparent;
 }
-*/styling the contact form*/
+/* styling the contact form*/
 
 .form-container {
   display: flex;
@@ -89,7 +89,7 @@
 }
 
 .contact-form {
-  width: 400px; 
+  width: 750px; 
 }
 
 .form-group {
