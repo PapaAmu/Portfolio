@@ -1,61 +1,62 @@
-import {Card,Input,Button,Typography,} from "@material-tailwind/react";
-import { Textarea } from "@material-tailwind/react";
-import {useForm} from "react-hook-form";
+import "../App.css";
+import { useForm } from 'react-hook-form';
+import { DevTool } from "@hookform/devtools";
 
-  export  default function ContactForm() {
-    const {register, formState: {errors} } = useForm();
-    console.log(errors);
-    return (
-        <div className="mx-auto my-8 mb-4">
-       <Card color="transparent" shadow={false} className="items-center mt-6 mb-4">
-        <Typography variant="h4" color="blue-gray">
-         Get In  Touch
-        </Typography>
-        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 items-center">
-          <div className="mb-1 flex flex-col gap-4">
-            <Typography vvariant="static" color="blue-gray" className="-mb2">
-              Full Name
-            </Typography>
-            <Input
-                variant="outlined"
-                size="lg"
-                placeholder="Name here..."
-                className=" !border-t-blue-gray-900 focus:!border-t-gray-900"
-                labelProps={{
-                  className: "before:content-none after:content-none"
-                }}
-                {...register("FullName", {required: 'fullname is required', minLength:{value:10, message: "Min length is 10"}})}
-                />
-                <p className="errormessage font-size-sm color:red">{errors.FullName?.message}</p>
-            <Typography vvariant="static" color="blue-gray" className="-mb-3">
-              Email Adress
-            </Typography>
-            <Input
-              variant="outlined"
-              size="lg"
-              placeholder="name@mail.com"
-              className=" !border-t-blue-gray-900 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-              {...register("Email",{required:'email is required', minLength:{value:10, message:'Min length is 10'}})}
-            />
-            <p className="errormessage font-size-sm color:red">{errors.Email?.message}</p>
-            <div className="flex w-70 flex-col gap-6">
-            <Typography vvariant="static" color="blue-gray" className="-mb-3">
-              Message
-            </Typography>
-            <Textarea variant="outlined"  placeholder="Anything in mind ..."
-            {...register("Message", {required: 'You gotta say something'})}
-             />
-             <p className="errormessage font-size-sm color:red">{errors.Message?.message}</p>
-            </div>
-          </div>
-          <Button className="mt-6" fullWidth>
-           <input type="submit"/>
-          </Button>
-        </form>
-      </Card>
-      </div>
-    );
+
+const ContactForm = () => {
+  const form = useForm();
+  const { register, control, handleSubmit,formState} = form;
+  const {errors} = formState;
+
+  const onSubmit = () => {
+    console.log("form submitted");
   }
+
+  return (
+    <div className="container">
+  <div className="row">
+    <div className="col-sm-6 gap-0">
+    <div className="form-container mt-4 mb-3 mr-10  border-blue-gray-900 gap-0 align-items-center">
+      <form className="contact-form text-center "  onSubmit={handleSubmit(onSubmit)} noValidate>
+        <div className="form-group">
+          <label htmlFor="fullname">Full Name</label>
+          <input type='text' id="fullname" {...register("fullname",{
+            required: "Fullname is required",
+            placeholder: "Your Full Name"
+          })} />
+          <p className="error pt-2">{errors.fullname?.message}</p>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type='email' id="email" {...register("email", {
+            required: "email is required",
+            placeholder: "something@example.com"
+          })} />
+          <p className="error pt-2">{errors.email?.message}</p>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea rows={10} cols={25} id="message" {...register("message", {
+            required: "Message is required",
+            placeholder: "Say Something ..."
+
+          })} />
+          <p className="error pt-2">{errors.message?.message}</p>
+        </div>
+
+        <div className="form-group">
+          <button className="button-contact" type="submit">SUBMIT</button>
+        </div>
+      </form>
+      <DevTool control={control} />
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  );
+}
+
+export default ContactForm;
