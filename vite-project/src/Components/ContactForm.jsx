@@ -38,7 +38,7 @@ const ContactForm = () => {
 
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea rows={10} cols={25} id="message" {...register("message", {
+          <input type='text' id="message" {...register("message", {
             required: "Message is required",
             placeholder: "Say Something ..."
 
