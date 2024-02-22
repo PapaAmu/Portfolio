@@ -141,3 +141,6 @@ textarea {
   font-weight:bold;
 
 }
+#message {
+  height: 120px;
+}
