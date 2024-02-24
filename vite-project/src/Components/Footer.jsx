@@ -5,9 +5,11 @@ import MailIcon from '@mui/icons-material/Mail';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white p-4">
-    <div className='container-fluid social-icons mt-4'>
-      <div className=" text-right social-links gap-6 ml-13 fa-3xl ">
+    <footer className="w-full bg-white">
+    <> 
+    <div className='container-fluid social-icons mt-4 '>
+      <div className=" text-right social-links gap-8 ml-13 fa-3xl ">
+      <span className="social-icon-text pr-20 d-sm-none">Connect with Me On: </span>
                 <a href="https://www.linkedin.com/in/hlobisile-lukhele-8812b9183/" rel="noreferrer" target="_blank">
                     <LinkedInIcon style={{ color: "black",fontSize: "34px", margin:"6px"}} />                  
                 </a>
@@ -20,11 +22,12 @@ export default function Footer() {
                 </a>
                
     </div>
-    <hr className="my-2 horizontal-line" />
+</div>
+<hr className="my-2 horizontal-line" />
       <Typography color="blue-gray" className="text-center font-normal">
         &copy; 2024 Hlobisile Lukhele
       </Typography>
-</div>
+      </>
     </footer>
   );
 }
