@@ -1,0 +1,211 @@
+/* Add this CSS to your existing styles */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+.header {
+    background-color: #2693FF;
+    color: #0000;
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    z-index: 1000; 
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__logo {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Dancing script", sans-serif !important;
+    font-size: 2rem;
+  }
+  .nav__menu {
+    display: block;
+  }
+  .nav__list {
+    list-style: none !important;
+    display: flex;
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .nav__item {
+    margin-right: 3rem !important;
+    padding-top: 10px;
+  }
+  .nav__item:hover {
+    text-decoration: underline;
+    transition: 1 sec ease-in;
+    color: white;
+  }
+  .nav__link {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  .nav__toggle {
+    display: none;
+    cursor: pointer;
+    color: #fff !important;
+    font-size:2rem !important;
+    padding-top:1rem !important
+  }
+  .show-menu {
+    display: block !important;
+  }
+  .nav__toggle,.nav__close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position:left; 
+    font-weight: 700 !important;
+    font-size:2rem !important;
+
+  }
+  @media screen and (max-width: 1150px) {
+    .container {
+      flex-direction: column !important;
+      align-items:flex-start !important;
+    }
+    @media screen and (max-width: 1150px) {
+      .nav__menu {
+          display: flex;
+          margin-top: 1rem;
+          color: #2693FF !important;
+
+      }
+      .nav__toggle {
+          display: block;
+          position: absolute;
+          right: 0;
+      }
+      .nav__list {
+          display: flex;
+          margin: 0.5rem !important;  
+          flex-direction: column !important;
+          color: #2693FF !important;
+      }
+      .nav__item {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-items: center !important;
+        padding-top: 2rem;
+        padding-bottom: 2rem !important;
+        color: #2693FF !important;
+        
+      }
+  }
+  
+  }
+
+  /* Add this CSS to your existing styles */
+
+.header {
+  background-color: #2693FF;
+  color: #0000;
+  position: fixed;
+  padding: 8px;
+  width: 100%;
+  z-index: 1000; 
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav__menu {
+  display: block;
+}
+.nav__list {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #fff !important;
+}
+.nav__item:hover{
+  color: #2693FF !important;
+  transition-behavior:  smooth;
+  transition-timing-function: 2sec ;
+  transition-delay: 4sec;
+  transition: ease-in-out;
+}
+.nav__item {
+  margin-right: 1rem;
+  padding-top: 10px;
+}
+.nav__link {
+  color: #fFF !important;
+  text-decoration: none;
+  font-weight: 400 !important;
+}
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+  color: #fff !important;
+}
+.show-menu {
+  display: block !important;
+}
+.nav__toggle,.nav__close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position:left;
+}
+@media screen and (max-width: 1150px) {
+  .container {
+    align-items: flex-start;
+  }
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        display: none;
+        margin-top: 1rem;
+    }
+    .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .nav__list {
+        display: flex; 
+        margin-bottom: 0.5rem;
+        color: #2693FF !;
+
+
+    }
+    .nav__item {
+        flex-direction: column !important;
+        justify-items: center !important;
+        margin-left: 40px;
+        color: #2693FF !;
+        margin-right: 15px; /* Adjust spacing as needed */
+        padding-top: 10px;
+    }
+    .nav__item:hover{
+      color: #2693FF !important;
+      transition-behavior:  smooth;
+      transition-timing-function: 2sec ;
+      transition-delay: 4sec;
+      transition: ease-in-out;
+    }
+}
+}
+
+   @media screen and (max-width: 1150px) {
+    .nav__menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: hsla(0, 0%, 6%, 0.2);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      width: 80%;
+      height: 100%;
+      padding: 6rem 3rem 0;
+      transition: right 0.4s;
+    }
+   }
