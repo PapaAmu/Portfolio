@@ -1,38 +1,63 @@
-import {Link} from 'react-router-dom'
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { IoClose, IoMenu } from 'react-icons/io5';
+import './Navbar.css';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const closeMenuOnMobile = () => {
+    if (window.innerWidth <= 1150) {
+      setShowMenu(false);
+    }
+  };
+
   return (
-    <div>   
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      
-      <li>
-      <Link to="/Home" className="hover:text-blue-500 transition-colors">
-          Home
-        </Link>
-      </li>
-      <li>
-      <Link to="/about" className="hover:text-blue-500 transition-colors">
-          About
-        </Link>
-      </li>
-      <li>
-      <Link to="/TechnicalSkills" className="hover:text-blue-500 transition-colors">
-          Skills
-        </Link>
-      </li>
-      <li>
-      <Link to="/Projects" className="hover:text-blue-500 transition-colors">
-          Projects
-        </Link>
-      </li>
-      <li>
-      <Link to="/Contact" className="hover:text-blue-500 transition-colors">
-          Contact
-        </Link>
-      </li>  
-    </ul>
-    </div>
+    <header className="header">
+      <nav className="nav container">
+        <NavLink to="/" className="nav__logo">
+          Jenise
+        </NavLink>
+
+        <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
+          <ul className="nav__list">
+            <li className="nav__item">
+              <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
+                About_Me
+              </NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
+                Tech_Stack
+              </NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/Projects" className="nav__link" onClick={closeMenuOnMobile}>
+                My_Projects
+              </NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/Contact" className="nav__link" onClick={closeMenuOnMobile}>
+                Contact_Me
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+            <IoClose />
+          </div>
+        </div>
+
+        <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+          <IoMenu />
+        </div>
+      </nav>
+    </header>
   );
-}
- 
-export default Navbar ();
+};
+
+export default Navbar;
