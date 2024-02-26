@@ -28,7 +28,7 @@ const Navbar = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
-                About_Me
+                About
               </NavLink>
             </li>
             <li className="nav__item">
@@ -38,12 +38,12 @@ const Navbar = () => {
             </li>
             <li className="nav__item">
               <NavLink to="/Projects" className="nav__link" onClick={closeMenuOnMobile}>
-                My_Projects
+                Projects
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="/Contact" className="nav__link" onClick={closeMenuOnMobile}>
-                Contact_Me
+                Contact
               </NavLink>
             </li>
           </ul>
