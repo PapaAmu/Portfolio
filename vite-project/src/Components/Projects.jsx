@@ -10,6 +10,7 @@ import {
    
   export default function Projects() {
     return (
+      <section id="Projects">
       <div className="md:container md:mx-auto my-6 mb-10 gap-2 space-x-4">
       <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
         Projects
@@ -18,7 +19,7 @@ import {
         <div className="md:w-96 border-black">
           <Card className="mt-6">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="public/images/Bellabheka website.png" alt="card-image" />
+              <img src="src/images/Bellabheka website.png" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2  font-semibold ">
@@ -44,7 +45,7 @@ import {
         <div className=" md:w-96 border-black">
           <Card className="mt-6 space-x-4">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="public/images/Portfolio Website.jpeg" alt="card-image" />
+              <img src="src/images/Portfolio Website.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold ">
@@ -68,7 +69,7 @@ import {
         <div className="w-full md:w-96">
           <Card className="mt-6 border-black">
             <CardHeader color="blue-gray" className="relative h-46">
-            <img src="public/images/Fruad Detector.jpeg" alt="card-image" />
+            <img src="src/images/Fruad Detector.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold">
@@ -87,5 +88,6 @@ import {
         </div>
       </div>
     </div>
+    </section>
     );
   }

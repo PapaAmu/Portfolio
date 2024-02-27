@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { IoClose, IoMenu } from 'react-icons/io5';
 import './Navbar.css';
 
@@ -20,31 +19,31 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <NavLink to="/" className="nav__logo">
+        <a href="/" className="nav__logo">
           Jenise
-        </NavLink>
+        </a>
 
         <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
-                About
-              </NavLink>
+              <a href='about'  className="nav__link" onClick={closeMenuOnMobile}>
+               About 
+              </a>
             </li>
             <li className="nav__item">
-              <NavLink to="/Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
                 Tech_Stack
-              </NavLink>
+              </a>
             </li>
             <li className="nav__item">
-              <NavLink to="/Projects" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="Projects" className="nav__link" onClick={closeMenuOnMobile}>
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="nav__item">
-              <NavLink to="/Contact" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="Contact" className="nav__link" onClick={closeMenuOnMobile}>
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="nav__close" id="nav-close" onClick={toggleMenu}>

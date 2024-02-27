@@ -5,6 +5,7 @@ import MailIcon from '@mui/icons-material/Mail';
 
 export default function Footer() {
   return (
+    <section id="Contact"> 
     <footer className="w-full bg-white">
     <> 
     <div className='container-fluid social-icons mt-4 '>
@@ -17,7 +18,7 @@ export default function Footer() {
                       <GitHubIcon style={{ color: "black",fontSize: "34px", margin:"6px" }} />
                 </a>
 
-                <a href="https://www.n.thwala03@gmail.com/" rel="noreferrer" target="_blank">
+                <a href="mailto:n.thwala03@gmail.com" rel="noreferrer" target="_blank">
                       <MailIcon style={{ color: "black",fontSize: "34px", margin:"6px" }} />
                 </a>
                
@@ -29,5 +30,6 @@ export default function Footer() {
       </Typography>
       </>
     </footer>
+    </section>
   );
 }

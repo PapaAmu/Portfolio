@@ -2,6 +2,7 @@ import  Resumebutton from './Resumebutton';
 import Contactbutton from './Contactbutton'
 function Home() {
     return (
+      <section id="about">  
      <div className="row home-component pt-20 pb-4  justify-left">
      <div className="md:flex">
      <div className="col-sm-8 pr-10 pl-6">
@@ -19,10 +20,11 @@ function Home() {
        </div>
     </div>
     <div className="col-sm- sm:justify-items-center mt-12 pt-8 ">
-      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center rounded"src="public/images/head-shot.png" alt="Head-shot image" />
+      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center rounded"src="src/images/head-shot.png" alt="Head-shot image" />
     </div>
     </div>
     </div>
+    </section>
     );
 }
  export default Home;
