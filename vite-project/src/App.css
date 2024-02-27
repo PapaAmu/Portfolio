@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+
 }
 .App {
   color:var(--button-text);
-}
+  overflow-x: hidden !important;
+  
+  }
 .horizontal-line {
   background-color:black !important;
 }
