@@ -15,7 +15,7 @@ const ContactForm = () => {
   return (
     <div className="container">
   <div className="row">
-    <div className="col-sm-6 gap-0">
+    <div className="col-sm-6 gap-0">  
     <div className="form-container mt-4 mb-3 mr-10  border-blue-gray-900 gap-0 align-items-center">
       <form className="contact-form text-center "  onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-group">
