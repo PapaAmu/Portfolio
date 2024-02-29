@@ -15,6 +15,7 @@ import {
       <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
         Projects
       </Typography>
+      <div data-aos="fade-up" data-aos-duration="2000"> 
       <div className="lg: grid grid-cols-1 md:grid-cols-3 gap-14 ">
         <div className="md:w-96 border-black">
           <Card className="mt-6">
@@ -87,6 +88,7 @@ import {
           </Card>
         </div>
       </div>
+    </div>
     </div>
     </section>
     );
