@@ -46,7 +46,7 @@ import {
         <div className=" md:w-96 border-black">
           <Card className="mt-6 space-x-4">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="src/images/Portfolio Website.jpeg" alt="card-image" />
+              <img src="src/images/portfolio.png" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold ">
