@@ -2,7 +2,7 @@ import './Contactbutton.css'
 
 const TechnicalSkills = () => {
     return (
-      <section id="Technical Skills">  
+    <section id="Technical Skills">  
   <div className="container text-center" id="#tech-stack">
 
     <div className="container-fluid">
@@ -12,6 +12,7 @@ const TechnicalSkills = () => {
     <h4>Let us explore some of my <span className="name-tag">skills</span></h4>
     </div>
     <div className="col-sm-8">
+    <div data-aos="fade-up" data-aos-duration="4000">
     <div className="row row-cols-3 row-cols-md-6 mt-4 mb-4">
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center border-r-4 bg-color-black">
@@ -49,8 +50,10 @@ const TechnicalSkills = () => {
     <h5 className="card-titl mt-2 text-bold">Redux</h5>
     </div>
     </div>
+    </div>
     
   </div>
+  <div data-aos="fade-up" data-aos-duration="1000">
   <div className="row row-cols-3 row-cols-md-6 mt-4 mb-4">
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
@@ -91,6 +94,7 @@ const TechnicalSkills = () => {
     </div>
   </div>
     </div>
+  </div>
   </div>
   </div>
   </div>
