@@ -1,5 +1,5 @@
 .btn-primary {
-  padding: 8px 33px 5px 33px !important;
+  padding: 8px 18px 5px 18px !important;
   background-color: white !important;
   color: #2693FF !important;
   border-radius:11px !important;
@@ -13,4 +13,5 @@
   color: white !important;
   transition: 1 sec ease-in !important;
 }
+
 
