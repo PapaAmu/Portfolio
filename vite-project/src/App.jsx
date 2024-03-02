@@ -3,7 +3,7 @@ import './App.css'
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider,Router,Routes} from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Home from './Components/Home';
 import TechnicalSkills from './Components/TechnicalSkills';
@@ -13,21 +13,23 @@ import Footer from './Components/Footer';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route> 
-    
+    <Router> 
+    <Navbar />
+    <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/TechnicalSkills" element={TechnicalSkills} />
         <Route path="/Projects" element={Projects} />
         <Route path="/Contact" element={Contact} />
-    </Route>
+    </Routes>
+    </Router>
   )
 )
 
 function App() {
   useEffect(() => {
     AOS.init({
-    duration: 1000, // Global animation duration
-    once: true, // Only once animation
+    duration: 1000, 
+    once: true, 
     });
     }, []);
   return (
