@@ -1,9 +1,14 @@
 import ContactForm from './ContactForm';
 import './contactbutton.css'
+import {Typography} from "@material-tailwind/react";
+
 
 const Contact = () => {
     return ( 
         <>  
+  <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
+   Contact Me
+  </Typography>
     <div className="container-fluid mt-6">
     <div className='container hook-up-para '> 
      <div className="row font-serif">

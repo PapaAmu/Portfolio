@@ -1,15 +1,19 @@
 import './Contactbutton.css'
+import {Typography} from "@material-tailwind/react";
 
 const TechnicalSkills = () => {
     return (
     <section id="Technical Skills">  
+    <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
+        Technical Skills
+  </Typography>
   <div className="container text-center" id="#tech-stack">
-
+  
     <div className="container-fluid">
    <div className="row sm:col-sm-2">
     <div className="col-sm-4 mt-4 mb-4 ">
     <h2 className="mt-8 pt-12  mb-4 text-center text-bold">Tech_Stack<span className="name-tag">............</span></h2>
-    <h4>Let us explore some of my <span className="name-tag">skills</span></h4>
+    <h4>Let us explore some of my <span className="name-tag"> skills</span></h4>
     </div>
     <div className="col-sm-8">
     <div data-aos="fade-up" data-aos-duration="4000">
