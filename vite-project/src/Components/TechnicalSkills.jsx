@@ -1,4 +1,3 @@
-import './Contactbutton.css'
 import {Typography} from "@material-tailwind/react";
 
 const TechnicalSkills = () => {
