@@ -26,22 +26,22 @@ const Navbar = () => {
         <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <a href='about'  className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="#about"  className="nav__link" onClick={closeMenuOnMobile}>
                About 
               </a>
             </li>
             <li className="nav__item">
-              <a href="Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="#Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
                 Tech_Stack
               </a>
             </li>
             <li className="nav__item">
-              <a href="Projects" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="#Projects" className="nav__link" onClick={closeMenuOnMobile}>
                 Projects
               </a>
             </li>
             <li className="nav__item">
-              <a href="Contact" className="nav__link" onClick={closeMenuOnMobile}>
+              <a href="#Contact" className="nav__link" onClick={closeMenuOnMobile}>
                 Contact
               </a>
             </li>
