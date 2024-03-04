@@ -19,7 +19,7 @@ const TechnicalSkills = () => {
     <div className="row row-cols-3 row-cols-md-6 mt-4 mb-4">
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center border-r-4 bg-color-black">
-    <img src="./assets/svg/HTML5.png" alt="HTML5 logo" className="pt-2 pl-2 pe-2 pb-1"  />
+    <img src="./public/assets/svg/HTML5.png" alt="HTML5 logo" className="pt-2 pl-2 pe-2 pb-1"  />
     <h5 className="card-titl mt-2 text-bold">HTML</h5>
     </div>
     </div>
