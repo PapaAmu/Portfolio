@@ -1,11 +1,10 @@
 import "../App.css";
 import { useForm } from 'react-hook-form';
-import { DevTool } from "@hookform/devtools";
 
 
 const ContactForm = () => {
   const form = useForm();
-  const { register, control, handleSubmit,formState} = form;
+  const { register, handleSubmit,formState} = form;
   const {errors} = formState;
 
   const onSubmit = () => {
@@ -50,7 +49,7 @@ const ContactForm = () => {
           <button className="button-contact" type="submit">SUBMIT</button>
         </div>
       </form>
-      <DevTool control={control} />
+      
     </div>
     </div>
   </div>
