@@ -22,7 +22,7 @@ function Home() {
     </div>
     <div className="col-sm-4 sm:justify-items-center mt-12 pt-8 ">
     <div data-aos="zoom-in"> 
-      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center rounded"src="./public/assets/images/head-shot.png" alt="Head-shot image" />
+      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center rounded"src="/public/assets/images/head-shot.png" alt="Head-shot image" />
       </div>
     </div>
    
