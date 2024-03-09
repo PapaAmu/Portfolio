@@ -61,7 +61,9 @@ import {
               <a href="https://github.com/HlobisileLukhele/Portfolio" target="_blank" rel="noreferrer">
               <GitHubIcon />
               </a>
+              <a href="https://portfolio-2yg5hvguf-hlobisilelukhele.vercel.app/" target="_blank" rel="noreferrer">
               <LanguageIcon />
+              </a>
             </div>
             </CardFooter>
           </Card>
