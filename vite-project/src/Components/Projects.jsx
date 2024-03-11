@@ -20,7 +20,7 @@ import {
         <div className="md:w-96 border-black">
           <Card className="mt-6">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="/public/assets/images/Bellabheka website.png" alt="card-image" />
+              <img src="./src/Assets/images/Bellabheka website.png" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2  font-semibold ">
@@ -46,7 +46,7 @@ import {
         <div className=" md:w-96 border-black">
           <Card className="mt-6 space-x-4">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="public/assets/images/portfolio.png" alt="card-image" />
+              <img src="./src/Assets/images/portfolio.png" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold ">
@@ -72,7 +72,7 @@ import {
         <div className="w-full md:w-96">
           <Card className="mt-6 border-black">
             <CardHeader color="blue-gray" className="relative h-46">
-            <img src="/public/assets/images/Fruad Detector.jpeg" alt="card-image" />
+            <img src="./src/Assets/images/Fruad Detector.jpeg" alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold">
