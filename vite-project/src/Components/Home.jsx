@@ -1,5 +1,5 @@
 import  Resumebutton from './Resumebutton';
-
+import Contactbutton from './Contactbutton'
 function Home() {
     return (
       <section id="about">  
@@ -12,17 +12,18 @@ function Home() {
        <p className="text-slate-200 text-black text-left pb-2  ml-12 mr-12 text-md">So if you are looking for someone who not only builds engaging and interacive user interfaces but also excels at translating complex tech jargons into clear accessible language, then I am your girl 😉.</p>
        <div className=" sm:mt-4 space-x-4 sm:flex text-left ml-12 mr-12 pr-15 pt-3 pb-9 ">
        <div data-aos="zoom-in">
-       <div className='col-sm6 d-flex align-items-center ml-20 '> 
+       <div className='col-sm6 d-flex align-items-center '> 
        <Resumebutton className=" pt-8 sm:mt-4 mb-4 pb-8">
         <a href="Hlobisile Lukhele resume (10).pdf" target="_blank" download="HlobisileLukhele Resume"/>
         </Resumebutton>
+        <Contactbutton />
        </div>
        </div>
        </div>
     </div>
-    <div className="col-sm-4 sm:justify-items-center mt-12 pt-8 ">
+    <div className="col-sm-4 lg:justify-items-center mt-12 pt-8">
     <div data-aos="zoom-in"> 
-      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center mt-10 object-center rounded"src="/public/assets/images/head-shot.png" alt="Head-shot image" />
+      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center object-center rounded"src="./src/Assets/images/head-shot image.png" alt="Head-shot image" />
       </div>
     </div>
    
