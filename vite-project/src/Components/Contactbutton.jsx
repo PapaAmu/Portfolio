@@ -1,4 +1,4 @@
-import './contactbutton.css'
+import './contactbutton.css';
 
 const Contactbutton = () => {
       return (
