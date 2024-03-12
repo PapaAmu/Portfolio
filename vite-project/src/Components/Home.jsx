@@ -1,5 +1,7 @@
 import  Resumebutton from './Resumebutton';
-import Contactbutton from './Contactbutton'
+import Contactbutton from './Contactbutton';
+import Headshot from '../Assets/images/head-shot image.png';
+
 function Home() {
     return (
       <section id="about">  
@@ -23,7 +25,7 @@ function Home() {
     </div>
     <div className="col-sm-4 lg:justify-items-center mt-12 pt-8">
     <div data-aos="zoom-in"> 
-      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center object-center rounded"src="/src/Assets/images/head-shot image.png" alt="Head-shot image" />
+      <img className="Head-shot md:h-65 md:w-70 mb-4, lg:h-65 md:w-60 mb-4, sm:h-65 w-60 text-center object-center rounded" src={Headshot}  alt="Head-shot image" />
       </div>
     </div>
    

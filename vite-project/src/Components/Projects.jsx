@@ -7,9 +7,9 @@ import {
   } from "@material-tailwind/react";
   import GitHubIcon from '@mui/icons-material/GitHub';
   import LanguageIcon from '@mui/icons-material/Language';
-  import {FraudDetectorImage} from '../Assets/images/Fruad Detector.jpeg'
-  import {PortfolioImage} from '../Assets/images/portfolio.png'
-  import {BellabhekaWebsiteImage} from '../Assets/images/Bellabheka website.png'
+  import FraudDetectorImage from '../Assets/images/Fruad Detector.jpeg'
+  import PortfolioImage from '../Assets/images/portfolio.png'
+  import Bellabhekawebsite from '../Assets/images/Bellabheka website.png'
 
    
   export default function Projects() {
@@ -24,7 +24,7 @@ import {
         <div className="md:w-96 border-black">
           <Card className="mt-6">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src={BellabhekaWebsiteImage} alt="card-image" />
+              <img src={Bellabhekawebsite} alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2  font-semibold ">
