@@ -1,4 +1,20 @@
 import {Typography} from "@material-tailwind/react";
+import Boostrap from '../Assets/svg/Boostrap.png';
+import CSS3 from '../Assets/svg/CSS3.png';
+import Firebase from '../Assets/svg/Firebase.png';
+import Git from '../Assets/svg/Git.png';
+import Github from '../Assets/svg/Github.png';
+import HTML5 from '../Assets/svg/HTML5.png';
+import JavaScript from '../Assets/svg/JavaScript_logo.png';
+import Mysql from '../Assets/svg/Mysql.png';
+import React from '../Assets/svg/React.png';
+import tailwind from '../Assets/svg/tailwind.png';
+import Redux from '../Assets/svg/Redux.png';
+import Framermotion from '../Assets/svg/Framer-motion.svg';
+
+
+
+
 
 const TechnicalSkills = () => {
     return (
@@ -19,37 +35,37 @@ const TechnicalSkills = () => {
     <div className="row row-cols-3 row-cols-md-6 mt-4 mb-4">
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center border-r-4 bg-color-black">
-    <img src="/src/Assets/svg/HTML5.png" alt="HTML5 logo" className="pt-2 pl-2 pe-2 pb-1"  />
+    <img src={HTML5 }alt="HTML5 logo" className="pt-2 pl-2 pe-2 pb-1"  />
     <h5 className="card-titl mt-2 text-bold">HTML</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/CSS3.png" alt="CSS logo" className="pt-2 pl-2 pe-2"   />
+    <img src={CSS3} alt="CSS logo" className="pt-2 pl-2 pe-2"   />
     <h5 className="card-titl mt-2 text-bold">CSS</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/JavaScript_logo.png" alt="Javascript logo" className="pt-2 pl-2 pe-2"  />
+    <img src={JavaScript} alt="Javascript logo" className="pt-2 pl-2 pe-2"  />
     <h5 className="card-titl mt-2 text-bold">Javascript</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Boostrap.png" alt="CSS logo" className="pt-2 pb-2 pl-2 pe-2"   />
+    <img src={Boostrap} alt="CSS logo" className="pt-2 pb-2 pl-2 pe-2"   />
     <h5 className="card-titl mt-2 text-bold">Boostrap</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/React.png" alt="React logo" className="pt-3 pl-2 pe-2 " />
+    <img src={React} alt="React logo" className="pt-3 pl-2 pe-2 " />
     <h5 className="card-titl mt-2 text-bold">React</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Redux.png" alt="React logo" className="pt-2 pl-2 pe-2" />
+    <img src={Redux}alt="React logo" className="pt-2 pl-2 pe-2" />
     <h5 className="card-titl mt-2 text-bold">Redux</h5>
     </div>
     </div>
@@ -60,38 +76,38 @@ const TechnicalSkills = () => {
   <div className="row row-cols-3 row-cols-md-6 mt-4 mb-4">
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Git.png" alt="Your image description" className="pt-2 pl-2 pe-2"  />
+    <img src={Git} alt="Your image description" className="pt-2 pl-2 pe-2"  />
     <h5 className="card-titl mt-2 text-bold">Git</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Github.png" alt="CSS logo" className="pt-2 pl-2 pe-2"   />
+    <img src={Github} alt="CSS logo" className="pt-2 pl-2 pe-2"   />
     <h5 className="card-titl mt-2 text-bold">Github</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Firebase.png" alt="Tailwind css logo" className="pt-2 pl-2 pe-2"  />
+    <img src={Firebase} alt="Tailwind css logo" className="pt-2 pl-2 pe-2"  />
     <h5 className="card-titl mt-2 text-bold">Firebase</h5>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/tailwind.png" alt="Redux logo" className="pt-2 pl-2 pe-2"  />
+    <img src={tailwind} alt="Redux logo" className="pt-2 pl-2 pe-2"  />
     <h5 className="card-titl mt-2 text-bold">tailwind</h5>
     </div>
     </div>
     
     <div className="col-sm mt-4 mb-4 .d-sm-none">
     <div className="card items-center">
-    <img src="/src/Assets/svg/framer-motion.svg" alt="Git logo" className="pt-1 pb-0 pl-2 pe-2"  />
+    <img src={Framermotion}alt="Git logo" className="pt-1 pb-0 pl-2 pe-2"  />
     <p className="card-titl mt-2 text-bold text-sm">Framer </p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src="/src/Assets/svg/Mysql.png" alt="Github logo" className="pt-2 pl-2 pe-2"/>
+    <img src={Mysql} alt="Github logo" className="pt-2 pl-2 pe-2"/>
     <h5 className="card-titl mt-2 text-bold">Mysql</h5>
     </div>
     </div>
