@@ -7,6 +7,10 @@ import {
   } from "@material-tailwind/react";
   import GitHubIcon from '@mui/icons-material/GitHub';
   import LanguageIcon from '@mui/icons-material/Language';
+  import {FraudDetectorImage} from '../Assets/images/Fruad Detector.jpeg'
+  import {PortfolioImage} from '../Assets/images/portfolio.png'
+  import {BellabhekaWebsiteImage} from '../Assets/images/Bellabheka website.png'
+
    
   export default function Projects() {
     return (
@@ -20,7 +24,7 @@ import {
         <div className="md:w-96 border-black">
           <Card className="mt-6">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="/src/Assets/images/Bellabheka website.png" alt="card-image" />
+              <img src={BellabhekaWebsiteImage} alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2  font-semibold ">
@@ -46,7 +50,7 @@ import {
         <div className=" md:w-96 border-black">
           <Card className="mt-6 space-x-4">
             <CardHeader color="blue-gray" className="relative h-46">
-              <img src="/src/Assets/images/portfolio.png" alt="card-image" />
+              <img src={PortfolioImage} alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold ">
@@ -72,7 +76,7 @@ import {
         <div className="w-full md:w-96">
           <Card className="mt-6 border-black">
             <CardHeader color="blue-gray" className="relative h-46">
-            <img src="/src/Assets/images/Fruad Detector.jpeg" alt="card-image" />
+            <img src= {FraudDetectorImage} alt="card-image" />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="name-tag mb-2 font-semibold">
