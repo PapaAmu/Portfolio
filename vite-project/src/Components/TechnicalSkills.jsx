@@ -10,7 +10,7 @@ import Mysql from '../Assets/svg/Mysql.png';
 import React from '../Assets/svg/React.png';
 import tailwind from '../Assets/svg/tailwind.png';
 import Redux from '../Assets/svg/Redux.png';
-import Framermotion from '../Assets/svg/Framer-motion.svg';
+import framermotion from '../Assets/svg/framer-motion.svg';
 
 
 
@@ -101,7 +101,7 @@ const TechnicalSkills = () => {
     
     <div className="col-sm mt-4 mb-4 .d-sm-none">
     <div className="card items-center">
-    <img src={Framermotion}alt="Git logo" className="pt-1 pb-0 pl-2 pe-2"  />
+    <img src={framermotion}alt="Git logo" className="pt-1 pb-0 pl-2 pe-2"  />
     <p className="card-titl mt-2 text-bold text-sm">Framer </p>
     </div>
     </div>
