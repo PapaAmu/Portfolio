@@ -17,6 +17,7 @@ const Navbar = () => {
   };
 
   return (
+    <div className='container-fluid'>  
     <header className="header">
       <nav className="nav container">
         <a href="/" className="nav__logo">
@@ -56,6 +57,7 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+    </div>
   );
 };
 
