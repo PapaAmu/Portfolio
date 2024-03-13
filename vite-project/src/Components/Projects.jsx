@@ -60,10 +60,10 @@ import {
             </CardBody>
             <CardFooter className="pt-2">
             <div className="icons text-center ">
-              <a href="https://github.com/HlobisileLukhele/Portfolio" target="_blank" rel="noreferrer">
+              <a href="https://portfolio-ecru-five-97.vercel.app/" target="_blank" rel="noreferrer">
               <GitHubIcon />
               </a>
-              <a href="https://portfolio-2yg5hvguf-hlobisilelukhele.vercel.app/" target="_blank" rel="noreferrer">
+              <a href="" target="_blank" rel="noreferrer">
               <LanguageIcon />
               </a>
             </div>
