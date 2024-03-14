@@ -12,10 +12,6 @@ import tailwind from '../Assets/svg/tailwind.png';
 import Redux from '../Assets/svg/Redux.png';
 import framermotion from '../Assets/svg/framer-motion.svg';
 
-
-
-
-
 const TechnicalSkills = () => {
     return (
     <section id="Technical Skills">  
@@ -36,37 +32,37 @@ const TechnicalSkills = () => {
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center border-r-4 bg-color-black">
     <img src={HTML5 }alt="HTML5 logo" className="pt-2 pl-2 pe-2 pb-1"  />
-    <h5 className="card-titl mt-2 text-bold">HTML</h5>
+    <p className="card-titl mt-2 text-bold">HTML</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={CSS3} alt="CSS logo" className="pt-2 pl-2 pe-2"   />
-    <h5 className="card-titl mt-2 text-bold">CSS</h5>
+    <p className="card-titl mt-2 text-bold">CSS</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={JavaScript} alt="Javascript logo" className="pt-2 pl-2 pe-2"  />
-    <h5 className="card-titl mt-2 text-bold">Javascript</h5>
+    <p className="card-titl mt-2 text-bold">Javascript</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Boostrap} alt="CSS logo" className="pt-2 pb-2 pl-2 pe-2"   />
-    <h5 className="card-titl mt-2 text-bold">Boostrap</h5>
+    <p className="card-titl mt-2 text-bold">Boostrap</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
-    <img src={React} alt="React logo" className="pt-3 pl-2 pe-2 " />
-    <h5 className="card-titl mt-2 text-bold">React</h5>
+    <img src={React} alt="React logo" className="pt-2 pl-2 pe-2 pb-1" />
+    <p className="card-titl mt-2 text-bold">React</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Redux}alt="React logo" className="pt-2 pl-2 pe-2" />
-    <h5 className="card-titl mt-2 text-bold">Redux</h5>
+    <p className="card-titl mt-2 text-bold">Redux</p>
     </div>
     </div>
     </div>
@@ -77,38 +73,38 @@ const TechnicalSkills = () => {
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Git} alt="Your image description" className="pt-2 pl-2 pe-2"  />
-    <h5 className="card-titl mt-2 text-bold">Git</h5>
+    <p className="card-titl mt-2 text-bold">Git</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Github} alt="CSS logo" className="pt-2 pl-2 pe-2"   />
-    <h5 className="card-titl mt-2 text-bold">Github</h5>
+    <p className="card-titl mt-2 text-bold">Github</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Firebase} alt="Tailwind css logo" className="pt-2 pl-2 pe-2"  />
-    <h5 className="card-titl mt-2 text-bold">Firebase</h5>
+    <p className="card-titl mt-2 text-bold">Firebase</p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={tailwind} alt="Redux logo" className="pt-2 pl-2 pe-2"  />
-    <h5 className="card-titl mt-2 text-bold">tailwind</h5>
+    <p className="card-titl mt-2 text-bold">tailwind</p>
     </div>
     </div>
     
     <div className="col-sm mt-4 mb-4 .d-sm-none">
     <div className="card items-center">
-    <img src={framermotion}alt="Git logo" className="pt-1 pb-0 pl-2 pe-2"  />
+    <img src={framermotion}alt="Git logo" className="pt-1 pb-2 pl-2 pe-2"  />
     <p className="card-titl mt-2 text-bold text-sm">Framer </p>
     </div>
     </div>
     <div className="col-sm mt-4 mb-4">
     <div className="card items-center">
     <img src={Mysql} alt="Github logo" className="pt-2 pl-2 pe-2"/>
-    <h5 className="card-titl mt-2 text-bold">Mysql</h5>
+    <p className="card-titl mt-2 text-bold">Mysql</p>
     </div>
     </div>
   </div>
