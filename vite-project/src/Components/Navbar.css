@@ -5,9 +5,9 @@
     background-color: #2693FF;
     color: #0000;
     position: fixed;
-    
     width: 100%;
     z-index: 1000; 
+    max-width: 378px !important;
   }
   .container {
     display: flex;
@@ -16,7 +16,7 @@
     padding: 0 !important;
   }
   .nav__logo {
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
     text-decoration: none;
     font-family: "Dancing script", sans-serif !important;
@@ -61,6 +61,7 @@
     position:left; 
     font-weight: 700 !important;
     font-size:2rem !important;
+    color: white !important;
 
   }
   @media screen and (max-width: 1150px) {
@@ -99,8 +100,7 @@
   
   }
 
-  /* Add this CSS to your existing styles */
-
+  
 .header {
   background-color: #2693FF;
   color: #0000;
@@ -115,7 +115,7 @@
   align-items: center;
 }
 .nav__logo {
-  color: #fff;
+  color: #fff !important;
   font-weight: bold;
   text-decoration: none;
 }
@@ -130,7 +130,7 @@
   color: #fff !important;
 }
 .nav__item:hover{
-  color: #2693FF !important;
+  color: black !important;
   transition-behavior:  smooth;
   transition-timing-function: 2sec ;
   transition-delay: 4sec;
@@ -175,20 +175,20 @@
     .nav__list {
         display: flex; 
         margin-bottom: 0.5rem;
-        color: #2693FF !;
-
+        color: white !important;
+        font-size:25px !important;
 
     }
     .nav__item {
         flex-direction: column !important;
         justify-items: center !important;
         margin-left: 40px;
-        color: #2693FF !;
+        color: White !;
         margin-right: 15px; /* Adjust spacing as needed */
         padding-top: 10px;
     }
     .nav__item:hover{
-      color: #2693FF !important;
+      color: black !important;
       transition-behavior:  smooth;
       transition-timing-function: 2sec ;
       transition-delay: 4sec;
@@ -202,7 +202,7 @@
       position: fixed;
       top: 0;
       right: 0;
-      background-color: hsla(0, 0%, 6%, 0.2);
+      background-color: #2693FF;
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       width: 80%;
