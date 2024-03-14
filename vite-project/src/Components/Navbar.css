@@ -7,7 +7,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000; 
-    max-width: 378px !important;
+    max-width:auto !important;
   }
   .container {
     display: flex;
