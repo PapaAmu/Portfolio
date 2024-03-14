@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className='container-fluid'>  
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav navbar-expand-lg container-fluid">
         <a href="/" className="nav__logo">
           Jenise
         </a>
