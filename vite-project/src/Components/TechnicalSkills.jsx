@@ -15,7 +15,7 @@ import framermotion from '../Assets/svg/framer-motion.svg';
 const TechnicalSkills = () => {
     return (
     <section id="Technical Skills">  
-    <Typography variant="h3" color="blue-gray" className="mb-4 mt-6 text-center font-serif">
+    <Typography variant="h3" color="blue-gray" className="mb-1 mt-4 text-center font-serif">
         Technical Skills
   </Typography>
   <div className="container text-center" id="#tech-stack">
