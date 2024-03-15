@@ -292,6 +292,16 @@ input[type="text"]
     height: 63em !important;
     background-color: #2693FF!important;
   }
+  .Head-shot-sm {
+    display: none !important;
+  }
+  .Head-shot-sm {
+    align-items: center !important;
+    margin: 4.5rem 0rem 5rem 4.5rem !important;
+    padding-top: 2rem !important;
+    height: fit-content;
+    display: none !important;
+  }
 } 
   /*styling the technical skills card sections*/
   .card {
