@@ -17,3 +17,8 @@ body{
 .horizontal-line {
   background-color:black !important;
 }
+.app-header {
+  align-items: center !important;
+  display: block !important;
+  margin: 0 auto !important;
+}

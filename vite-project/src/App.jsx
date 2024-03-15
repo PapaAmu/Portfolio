@@ -18,14 +18,14 @@ function App() {
     });
     }, []);
   return (
-    <>
+    <div className='app-header'>
       <Navbar />
       <Home />
       <TechnicalSkills />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
