@@ -1,7 +1,6 @@
 import "../App.css";
 import { useForm } from 'react-hook-form';
 
-
 const ContactForm = () => {
   const form = useForm();
   const { register, handleSubmit,formState} = form;
