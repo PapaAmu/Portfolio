@@ -3,63 +3,57 @@
 
 .header {
   background-color: #2693FF;
-  color: #0000;
   position: fixed;
   width: 100%;
-  z-index: 1000; 
-  max-width: auto !important;
+  padding-right: 60px;
 }
 .container {
-  display: flex !important;
+  display: flex;
 }
 .nav__logo {
-  color: #fff !important;
+  color: #fff;
   font-weight: bold;
-  padding-left: 10px !important;
+  padding-left: 10px;
   text-decoration: none;
-  font-family: "Dancing script", sans-serif !important;
+  font-family: "Dancing script", sans-serif;
   font-size: 2rem;
 }
 .nav__menu {
   display: block;
-  width:  100% !important;
+  width:  100%;
 }
-.nav__list {
-  align-items: right !important;
-  list-style: none !important;
-  padding-right: 14rem !important;
-  display: flex !important;
-  justify-items: flex-end !important;
-  color: #fff !important;
-  font-family: "Montserrat", sans-serif !important;
+.nav__list {  
+  display: flex;
+  color: #fff;
+  
 }
 .nav__item {
-  padding-top: 5px !important;
-  margin-right: 3rem !important;
-  margin-top: 9px !important;
+  margin: 10px 10px;
+  
 }
-.nav__item:hover {
-  text-decoration: underline;
+.nav__item:hover a {
+  text-decoration:none;
   transition: 1 sec ease-in;
-  color: white;
+  
 }
 .nav__link {
-  color: #fff !important;
+  color: #fff;
   text-decoration: none;
 }
+
 .nav__toggle {
   display: none;
   cursor: pointer;
-  color: #fff !important;
-  font-size:2rem !important;
-  padding-top:1rem !important
+  color: #fff;
+  font-size:2rem;
+  padding-top:1rem;
 }
 .show-menu {
   display: block !important;
 }
 
 
-/* responsive for mobile */
+
 
          
     @media screen and (max-width: 657px) {
@@ -111,7 +105,7 @@
                   justify-items: center !important;
                   margin-left: 40px;
                   color: White !;
-                  margin-right: 15px; /* Adjust spacing as needed */
+                  margin-right: 15px;
                   padding-top: 10px;
               }
               .nav__item:hover{
