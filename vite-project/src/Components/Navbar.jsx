@@ -25,29 +25,13 @@ const Navbar = () => {
         </a>
 
         <div className={`nav__menu ${showMenu ? 'show-menu' : ''}`} id="nav-menu">
-          <ul className="nav__list align-items-left ">
-            <li className="nav__item">
-              <a href="#about"  className="nav__link" onClick={closeMenuOnMobile}>
-               About 
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>
-                Tech_Stack
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#Projects" className="nav__link" onClick={closeMenuOnMobile}>
-                Projects
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#Contact" className="nav__link" onClick={closeMenuOnMobile}>
-                Contact
-              </a>
-            </li>
-          </ul>
-          <div className="nav__close" id="nav-close" onClick={toggleMenu}>
+          <ul className="nav justify-content-end">
+            <li className="nav__item"><a href="#about"  className="nav__link" onClick={closeMenuOnMobile}>About</a></li>
+            <li className="nav__item"><a href="#Technical Skills" className="nav__link" onClick={closeMenuOnMobile}>Tech_Stack</a></li>
+            <li className="nav__item"><a href="#Projects" className="nav__link" onClick={closeMenuOnMobile}>Projects</a></li>
+            <li className="nav__item"><a href="#Contact" className="nav__link" onClick={closeMenuOnMobile}>Contact</a></li>
+            </ul>
+            <div className="nav__close" id="nav-close" onClick={toggleMenu}>
             <IoClose />
           </div>
         </div>
